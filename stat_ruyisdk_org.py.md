@@ -5,7 +5,7 @@
 #### 统计结果
 ```
 # Repositories工作表
-| RepoName       | Forks | Stars | Watchers | Issues | PRs |
+| RepoName | Forks | Stars | Watchers | Issues | PRs |
 
 # Summary工作表
 | TotalRepos | TotalForks | TotalStars | TotalWatchers | TotalIssues | TotalPRs | TotalContributors | StatTime | AllContributors |
@@ -18,6 +18,7 @@
 3. 运行脚本：python3 stat_ruyisdk_org.py
 
 #### 运行结果
+```
 python3 stat_ruyisdk_org.py
 === 开始统计 ===
 
@@ -87,7 +88,7 @@ python3 stat_ruyisdk_org.py
   "StatTime": "20250618_175227",
   "AllContributors": "255doesnotexist, Arielfoever, ChunyuLiao, Cyl18, Estherrzhang, FIFCC, Gekyume777, KevinMX, KotorinMinami, Pagerd, RevySR, Sebastianhayashi, Sharelter, Tianyu-Fu, U2FsdGVkX1, Viki1888, YunxiangLuo, abing1991, aisuneko, brsf11, cxjjxc, guoren83, imkiva, infiWang, jamesbeyond, ksco, lazyparser, leeyong5866, luke-8-pro, menghong0522, minghq, nekorouter, panglars, pz9115, qjivy, semiyd, stydxm, trdthg, weilinfox, wychlw, xen0n, xianbing99, xijing21, xingmingjie, yjd01941629, yunxiangluo2023, zxy502"
 }
-
+```
 
 ### 获取 GitHub Token 的步骤
 
