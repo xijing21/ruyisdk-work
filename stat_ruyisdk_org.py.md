@@ -13,7 +13,7 @@
 ```
 
 #### 运行说明（Linux下）
-1. 获取your_token_here
+1. 获取your_token （参考下文中“获取 GitHub Token 的步骤”章节）
 2. 配置系统环境变量：export GITHUB_TOKEN=your_token_here
 3. 运行脚本：python3 stat_ruyisdk_org.py
 
@@ -114,3 +114,6 @@ python3 stat_ruyisdk_org.py
 5. **生成 Token**
    - 滚动到页面底部点击 "Generate token"
    - **重要**：立即复制生成的 token（关闭页面后将无法再次查看）
+
+![image](https://github.com/user-attachments/assets/95c3a157-88a6-4c73-88e4-e40b6af5365a)
+
