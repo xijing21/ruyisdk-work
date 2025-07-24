@@ -70,7 +70,7 @@ String message = "This is a very long string that "
 若设置为4，则缩进4个空格。
 以上示例均基于Checkstyle的代码格式化规则，实际效果可能因工具或配置环境略有差异。
 
-##
+## Javadoc Comments
 <img width="1024" height="706" alt="image" src="https://github.com/user-attachments/assets/bea0c5a0-e3f9-44ca-bbeb-765cf283d5ee" />
 
 - **AtclauseOrder**: 检查@clauses的顺序是否符合规范。
@@ -86,8 +86,6 @@ String message = "This is a very long string that "
 - **SingleLineJavadoc**: 检查单行Javadoc的格式。
 - **SummaryJavadoc**: 检查总结性的Javadoc是否符合规范。
 
-以下是针对Checkstyle中Javadoc相关检查项的详细说明及示例：
----
 ### 1. **AtclauseOrder**
 **功能**：检查`@`标签（如`@param`、`@return`等）的顺序是否符合规范。  
 **示例**：  
@@ -197,8 +195,6 @@ public void run() { ... }
  */
 public int add(int a, int b) { ... }
 ```
----
-以上示例均基于Checkstyle的Javadoc规范，具体规则可通过配置调整。更多细节可参考官方文档或集成开发环境中的配置说明。
 
 
 
