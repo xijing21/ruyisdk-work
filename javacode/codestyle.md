@@ -86,6 +86,121 @@ String message = "This is a very long string that "
 - **SingleLineJavadoc**: 检查单行Javadoc的格式。
 - **SummaryJavadoc**: 检查总结性的Javadoc是否符合规范。
 
+以下是针对Checkstyle中Javadoc相关检查项的详细说明及示例：
+---
+### 1. **AtclauseOrder**
+**功能**：检查`@`标签（如`@param`、`@return`等）的顺序是否符合规范。  
+**示例**：  
+```java
+/**
+ * 规范顺序应为 @param -> @return -> @throws
+ * @param a 参数a
+ * @return 计算结果
+ * @throws IllegalArgumentException 参数非法时抛出
+ */
+public int calculate(int a) { ... }
+```
+若顺序错误（如`@return`在`@param`前），则触发违规。
+---
+### 2. **InvalidJavadocPosition**
+**功能**：检查Javadoc注释是否位于正确位置（如类/方法声明前）。  
+**错误示例**：  
+```java
+public class Test {
+    private int value;
+    /** 错误：Javadoc应在字段声明前 */
+    private String name;
+}
+```
+---
+### 3. **JavadocMethod**
+**功能**：检查方法是否包含完整的Javadoc（包括`@param`、`@return`等标签）。  
+**缺失示例**：  
+```java
+/** 缺少 @param 和 @return 标签 */
+public int add(int a, int b) { ... }
+```
+---
+### 4. **JavadocParagraph**
+**功能**：检查段落格式（如首句摘要、段落间空行）。  
+**错误示例**：  
+```java
+/**
+ * 第一段未以句号结尾第二段未空行直接连接
+ */
+public void demo() { ... }
+```
+---
+### 5. **JavadocTagContinuationIndentation**
+**功能**：检查多行`@`标签描述的缩进（默认需缩进4字符）。  
+**错误示例**：  
+```java
+/**
+ * @param a 描述文本
+ * 未缩进续行
+ */
+public void foo(int a) { ... }
+```
+---
+### 6. **MissingJavadocMethod**
+**功能**：检查方法是否缺失Javadoc注释。  
+**示例**：  
+```java
+// 无Javadoc的方法
+public void process() { ... }
+```
+---
+### 7. **MissingJavadocType**
+**功能**：检查类/接口是否缺失Javadoc注释。  
+**示例**：  
+```java
+// 无类注释
+public class User { ... }
+```
+---
+### 8. **NonEmptyAtclauseDescription**
+**功能**：检查`@`标签后是否有描述文本。  
+**错误示例**：  
+```java
+/**
+ * @param  // 缺少参数描述
+ */
+public void setValue(int value) { ... }
+```
+---
+### 9. **RequireEmptyLineBeforeBlockTagGroup**
+**功能**：要求`@`标签组前需有空行。  
+**错误示例**：  
+```java
+/**
+ * 方法描述
+ * @param a 参数a
+ */
+public void test(int a) { ... }
+```
+需在描述后添加空行再写`@param`。
+---
+### 10. **SingleLineJavadoc**
+**功能**：检查单行Javadoc格式（如是否以句号结尾）。  
+**错误示例**：  
+```java
+/** 未以句号结尾 */
+public void run() { ... }
+```
+---
+### 11. **SummaryJavadoc**
+**功能**：检查摘要首句是否符合规范（需完整描述且以句号结尾）。  
+**错误示例**：  
+```java
+/**
+ * 计算两个数的和  // 未以句号结尾
+ */
+public int add(int a, int b) { ... }
+```
+---
+以上示例均基于Checkstyle的Javadoc规范，具体规则可通过配置调整。更多细节可参考官方文档或集成开发环境中的配置说明。
+
+
 
 ## Filters
 <img width="1018" height="711" alt="image" src="https://github.com/user-attachments/assets/07bce197-71b8-4777-bc7b-0ef48db85e39" />
