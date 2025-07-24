@@ -89,12 +89,12 @@ String message = "This is a very long string that "
 
 ## Filters
 <img width="1018" height="711" alt="image" src="https://github.com/user-attachments/assets/07bce197-71b8-4777-bc7b-0ef48db85e39" />
- **Specific Modules**:
-   - **SuppressionCommentFilter**: 用于处理带有抑制注释的代码。
-   - **SuppressionFilter**: 处理抑制过滤。
-   - **SuppressionXPathFilter**: 使用XPath表达式来抑制AST树中的节点。
-   - **SuppressionXPathSingleFilter**: 单个XPath表达式的抑制过滤器。
-   - **SuppressWarningsFilter**: 抑制警告信息。
-   - **SuppressWithNearbyCommentFilter**: 通过附近的注释来抑制检查。
-   - **SuppressWithNearbyTextFilter**: 通过附近的文本内容来抑制检查。
+
+- **SuppressionCommentFilter**: 用于处理带有抑制注释的代码。
+- **SuppressionFilter**: 处理抑制过滤。
+- **SuppressionXPathFilter**: 使用XPath表达式来抑制AST树中的节点。
+- **SuppressionXPathSingleFilter**: 单个XPath表达式的抑制过滤器。
+- **SuppressWarningsFilter**: 抑制警告信息。
+- **SuppressWithNearbyCommentFilter**: 通过附近的注释来抑制检查。
+- **SuppressWithNearbyTextFilter**: 通过附近的文本内容来抑制检查。
 
