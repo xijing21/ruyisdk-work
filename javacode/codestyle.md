@@ -1,5 +1,18 @@
 
 ## 配置说明
+Eclipse CS（Eclipse Checkstyle Integration）插件创建新的Check Configuration（检查配置）。以下是对下拉选项的解释：
+1. **Internal Configuration**:
+   - 内部配置：这意味着配置将存储在Eclipse的工作空间内部，通常适用于项目特定的配置。
+2. **External Configuration File**:
+   - 外部配置文件：这表示配置将从外部文件加载，该文件可能位于项目的某个特定目录或其他地方。这种方式适合共享配置或在多个项目中复用相同的配置。
+3. **Remote Configuration**:
+   - 远程配置：这种配置从远程服务器或仓库加载，适用于需要集中管理和更新的配置。
+4. **Project Relative Configuration**:
+   - 项目相对配置：这意味着配置相对于当前项目进行设置，通常是将配置文件放在项目的根目录下，以便于版本控制和迁移。
+这些选项允许开发者根据不同的需求和环境选择合适的配置方式，以确保代码符合既定的编码标准和风格指南。
+
+---
+
 Eclipse中的Checkstyle插件配置界面的各个配置项的解释：
 1. **Available modules**:
    - 左侧面板，显示了所有可用的Checkstyle模块。这些模块可以分为不同的类别。
