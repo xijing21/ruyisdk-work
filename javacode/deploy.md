@@ -23,6 +23,7 @@
 
 <img width="662" height="930" alt="image" src="https://github.com/user-attachments/assets/b08c936c-2d6b-4f99-b8bf-36de7efc1925" />
 
+
 - 修改google_checks中的内容：
 
 | module      | property                | previous value | modified value | note                                           |
@@ -34,6 +35,47 @@
 |             | throwsIndent            | 4              | 4              | throws子句的缩进量                             |
 |             | lineWrappingIndentation | 4              | 4              | 行包裹时的缩进量                               |
 |             | arrayInitIndent         | 2              | 4              | 数组初始化时的缩进量                           |
-- 修改google_checks中的内容：
+
+
 ## Formatter 配置
+1. Eclipse > windows > preferences > Java > code style > Formatter
+2. Formatter界面：  Import，导入之前下载后的 eclipse-java-google-style.xml（这里导入的是未修改之前的xml，接着需要edit）
+3. Edit，对照配置项（参考截图）修改对应的选项并保存即可。
+
 ## Checkstyle 配置
+1. Eclipse > windows > preferences > Checkstyle
+2. 选中界面表格中的 Google Checks > Export，导出一个Google_Checks.xml文档到本地任一地方；
+3. 按照之前标记的表格，将Google_Checks.xml中对应的选项的值进行修改并保存；
+4. 回到Checkstyle界面，New > External Configuration File > Location Browse 选中修改后的 Google_Checks_modify.xml  > ok
+5. 注意：这里会弹出提示窗口：
+  <img width="608" height="223" alt="image" src="https://github.com/user-attachments/assets/8f2d7c6d-69b5-4b0a-a337-2c4e11001e22" />
+  
+6. Edit properties...  
+7. Find unresolved properties
+   
+  ```
+  Unresolved Properties found
+  The following unresolved properties were found:
+  ${org.checkstyle.google.severity}
+  ${org.checkstyle.google.suppressionfilter.config}
+  ${org.checkstyle.google.suppressionxpathfilter.config}
+  
+  Add them to the additional configuration properties?
+  No   Yes
+  ```
+
+8. 针对上面的三个问题，第一个采用配置的方式，其它两个回到xml文档中，删除响应的配置；保存后再次导入，会再次提示，但是只有一个选项：${org.checkstyle.google.severity} ；为其配置值：warning
+9. 如果后续要修改${org.checkstyle.google.severity} ：表格中选中对应项 > Properties > Additional properties 
+<img width="1366" height="813" alt="image" src="https://github.com/user-attachments/assets/8275ebec-ac85-41cb-9682-1c190fa2ef32" />
+
+
+## 验证
+1. 项目右键 > Checkstyle > check code with checkstyle
+   <img width="645" height="156" alt="image" src="https://github.com/user-attachments/assets/6c963c6c-06d9-4c22-84c3-43a777c1ea0c" />
+
+2. Problem 窗口查看 Checkstyle Problem；
+上面的配置主要是围绕缩进等配置的，因此可以看看有关的错误；
+
+3. java文件右键 > source > format :会发现Problem 窗口中有关缩进的一些问题消失。
+
+当然这是代码不规范的情况下的检查和修改；还有一些其它问题及设置，在后续进行配置修改的说明。
