@@ -33,6 +33,12 @@ Eclipse中的一个 Formatter 配置界面，包含了多种格式化选项。�
 - **Indentation size**: 缩进的字符数，这里是4个字符。
 - **Tab size**: 制表符的大小，这里是8个字符。
 - **Text block indentation**: 文本块的缩进方式，默认为“Default for wrapped lines”。
+   1. **Do not touch**：这个选项意味着不对换行进行任何额外的缩进处理。换行后，代码将与上一行的起始位置对齐。
+   2. **Indent by one**：选择此选项时，每行换行后的代码会相对于上一行缩进一个单位（通常是制表符或空格）。这种设置有助于区分不同的逻辑块或语句。
+   3. **Default for wrapped lines**：这个选项通常指的是使用编辑器或IDE的默认设置来处理换行后的缩进。具体的缩进方式取决于编辑器的全局设置或项目特定的格式化规则。
+   4. **Indent on column**：这个选项允许你指定一个特定的列号，使得换行后的代码从这个指定的列开始。这对于保持代码的对齐和可读性非常有用，特别是在处理长行代码时。
+   这些选项提供了灵活性，可以根据个人偏好或团队规范来调整代码的格式，从而提高代码的可读性和维护性。
+
 ### Indented elements:
 - **Declarations within class body**: 类体中的声明是否缩进。
 - **Declarations within enum declaration**: 枚举声明中的声明是否缩进。
