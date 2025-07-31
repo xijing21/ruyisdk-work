@@ -258,7 +258,10 @@ public int add(int a, int b) {
 allowOneLineTags: 是否允许单行 Javadoc（如 /** @return 0 */）。默认为 false。
 
 <img width="971" height="889" alt="image" src="https://github.com/user-attachments/assets/afa7f635-12bc-48b2-aa4b-2a7e88763636" />
+
 取消RequireEmptyLineBeforeBlockTagGroup勾选
+<img width="966" height="888" alt="image" src="https://github.com/user-attachments/assets/c488f8aa-16bb-45b2-92e2-0c4f3a045c57" />
+
 
 
 ## Missing a Javadoc comment.
