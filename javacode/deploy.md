@@ -81,3 +81,35 @@
 3. java文件右键 > source > format :会发现Problem 窗口中有关缩进的一些问题消失。
 
 当然这是代码不规范的情况下的检查和修改；还有一些其它问题及设置，在后续进行配置修改的说明。
+
+___
+
+在上述实践过程中，还针对代码的具体情况进行了一些调整，具体调整记录如下：
+1. Checkstyle 的 AbbreviationAsWordInName ：
+- allowedAbbreviationLength ：0 (未修改)
+- allowedAbbreviations ：I （ 空--> I） # 允许接口：I + UpperCamelCase（如 ILogger）表达方式
+
+Google风格要求标识符名称中的连续大写字母数量不超过1个。例如，MyTest 是允许的，但 MyTEST 则不允许。但是Eclipse 命名风格（如 ILog、IStatus）确实在Eclipse基础库中广泛存在，因此暂允许接口沿用这种风格。
+
+<img width="702" height="764" alt="image" src="https://github.com/user-attachments/assets/c1c4bb2a-9fab-4f5d-add7-950f4d40f337" />
+
+2. Checkstyle 的 RequireEmptyLineBeforeBlockTagGroup  ：禁用  
+
+根据 CheckStyle 的要求，Javadoc 标签（如 @param, @return, @throws 等）之前应有一个空行以提高代码的可读性和规范性。Formatter格式化的Javadoc 注释中，默认是包含空行的，但是这个空行包含一个空格，Check时无法识别出来。因此先禁用。（暂时未能成功通过修改Check xml识别Formatter产生的空行，只好先禁用了。欢迎贡献修改google_checks.xml）
+
+<img width="966" height="888" alt="image" src="https://github.com/user-attachments/assets/218e02f5-47d2-46f0-b49e-cf84ccee6b4f" />
+
+
+3. Checkstyle 的 MissingJavadocType
+- scope ： protected --> public #仅检查公共成员。
+- skipAnnotations : Generated --> Generated,Override  #跳过带有@Generated注解的成员(如果项目中使用了代码生成工具,如 Lombok、MapStruct 等）；跳过带有@Override注解的成员。
+
+<img width="647" height="565" alt="image" src="https://github.com/user-attachments/assets/a33b3465-e842-4dcd-916c-47d6284177be" />
+
+4. Checkstyle 的 CustomImportOrder ：
+Google style的导入语句应分为以下三个明确的组，**每组之间用空行分隔**：
+- 标准库导入：来自 java. 和 javax. 包的导入语句。
+- 第三方库导入：非标准库的第三方包导入语句。
+- 本地项目导入：当前项目中的包导入语句。
+
+check会对顺序进行检测，但是似乎未对空格进行检测。这里统一按照Eclipse的默认风格，在多组导入之间不用空行分隔；
