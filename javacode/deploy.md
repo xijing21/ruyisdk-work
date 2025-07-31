@@ -48,10 +48,11 @@
 3. 按照之前标记的表格，将Google_Checks.xml中对应的选项的值进行修改并保存；
 4. 回到Checkstyle界面，New > External Configuration File > Location Browse 选中修改后的 Google_Checks_modify.xml  > ok
 5. 注意：这里会弹出提示窗口：
+   
   <img width="608" height="223" alt="image" src="https://github.com/user-attachments/assets/8f2d7c6d-69b5-4b0a-a337-2c4e11001e22" />
   
-6. Edit properties...  
-7. Find unresolved properties
+7. Edit properties...  
+8. Find unresolved properties
    
   ```
   Unresolved Properties found
@@ -65,8 +66,9 @@
   ```
 
 8. 针对上面的三个问题，第一个采用配置的方式，其它两个回到xml文档中，删除响应的配置；保存后再次导入，会再次提示，但是只有一个选项：${org.checkstyle.google.severity} ；为其配置值：warning
-9. 如果后续要修改${org.checkstyle.google.severity} ：表格中选中对应项 > Properties > Additional properties 
-<img width="1366" height="813" alt="image" src="https://github.com/user-attachments/assets/8275ebec-ac85-41cb-9682-1c190fa2ef32" />
+9. 如果后续要修改${org.checkstyle.google.severity} ：表格中选中对应项 > Properties > Additional properties
+    
+  <img width="1366" height="813" alt="image" src="https://github.com/user-attachments/assets/8275ebec-ac85-41cb-9682-1c190fa2ef32" />
 
 
 ## 验证
