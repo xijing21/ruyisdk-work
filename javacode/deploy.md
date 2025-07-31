@@ -101,7 +101,7 @@ Google风格要求标识符名称中的连续大写字母数量不超过1个。�
 
 
 3. Checkstyle 的 MissingJavadocType
-- scope ： protected --> public #仅检查公共成员。
+- scope ： protected --> public #仅检查公共成员。仅强制要求公共类/接口、抽象类/接口及其方法必须有 Javadoc 注释，而对其他情况（如私有方法、简单 getter/setter 等）仅鼓励但不强制。
 - skipAnnotations : Generated --> Generated,Override  #跳过带有@Generated注解的成员(如果项目中使用了代码生成工具,如 Lombok、MapStruct 等）；跳过带有@Override注解的成员。
 
 <img width="647" height="565" alt="image" src="https://github.com/user-attachments/assets/a33b3465-e842-4dcd-916c-47d6284177be" />
