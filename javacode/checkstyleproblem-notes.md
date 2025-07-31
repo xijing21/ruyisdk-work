@@ -468,30 +468,7 @@ Module: MissingJavadocMethod
      - `Deprecated`：跳过带有`@Deprecated`注解的成员。  
      - 自定义注解：如`@MyAnnotation`，跳过带有自定义注解的成员。  
 
+改成了：
+<img width="647" height="565" alt="image" src="https://github.com/user-attachments/assets/a33b3465-e842-4dcd-916c-47d6284177be" />
 
-4. **additionalJavadocTags**  
-   - **含义**：允许在Javadoc注释中使用自定义标签。  
-   - **常见配置值**：  
-     - `@todo`：允许使用`@todo`标签。  
-     - `@note`：允许使用`@note`标签。  
-5. **allowMissingJavadoc**  
-   - **含义**：是否允许缺少Javadoc注释。  
-   - **常见配置值**：  
-     - `false`（默认）：不允许缺少Javadoc注释。  
-     - `true`：允许缺少Javadoc注释。  
-6. **allowMissingParamTags**  
-   - **含义**：是否允许缺少`@param`标签。  
-   - **常见配置值**：  
-     - `false`（默认）：不允许缺少`@param`标签。  
-     - `true`：允许缺少`@param`标签。  
-7. **allowMissingReturnTag**  
-   - **含义**：是否允许缺少`@return`标签。  
-   - **常见配置值**：  
-     - `false`（默认）：不允许缺少`@return`标签。  
-     - `true`：允许缺少`@return`标签。  
-8. **allowMissingThrowsTags**  
-   - **含义**：是否允许缺少`@throws`标签。  
-   - **常见配置值**：  
-     - `false`（默认）：不允许缺少`@throws`标签。  
-     - `true`：允许缺少`@throws`标签。  
-这些配置项可以根据项目的实际需求进行调整，以确保代码规范的一致性和可维护性。更多详细信息可参考相关配置文档。
+
