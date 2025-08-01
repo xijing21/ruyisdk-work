@@ -41,7 +41,7 @@ Default：
 
 Google Style：
 ```
-*
+/**
  * The ${field_name}.
  */
 ```
