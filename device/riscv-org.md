@@ -12,7 +12,7 @@
 | 奕斯伟（ESWIN）       | 芯片/方案/生态，车载工业| https://www.eswin.com/     | -| EIC7702X AI芯片，2025加入RISE|
 | 进迭时空（SpacemiT）  | 高性能RISC-V芯片/整机| https://www.spacemit.com/  | -| VitalStone V100 64核服务器芯片，12nm工艺|
 | 匠芯创（ArtInChip）   | 工业控制SoC，多媒体AI| https://artinchip.com/     | -| 2025峰会展示工业应用SoC|
-| Andes Technology | 台湾RISC-V IP厂商，推出AE350等高性能处理器；高性能IP，AX45MP多核 | https://www.andestech.com/| AndesCore系列，面向AIoT、车载；与BrainChip合作AI|
+| Andes Technology | 台湾RISC-V IP厂商，推出AE350等高性能处理器；高性能IP，AX45MP多核 | https://www.andestech.com/| -|AndesCore系列，面向AIoT、车载；与BrainChip合作AI|
 
 ### （2）物理芯片制造/量产厂商
 
@@ -71,7 +71,7 @@
 | GreenWaves       | 超低功耗RISC-V AI芯片厂商| https://www.greenwaves-technologies.com/| GAP系列，面向音频与传感器融合处理|
 | Akeana           | RISC-V IP供应商| -| Premier成员|
 | Rivos            | 数据中心/AI服务器| https://www.rivosinc.com/| 2025融资加速|
-| AheadComputing   | 前Intel团队，64位高性能CPU| -| 2025种子轮2150万美元，针对AI瓶颈|
+| AheadComputing   | 前Intel团队，64位高性能CPU| - | 2025种子轮2150万美元，针对AI瓶颈|
 
 ---
 
