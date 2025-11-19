@@ -1,6 +1,4 @@
-# RISC-V芯片和开发板厂商/企业
-
-## **一、国内RISC-V芯片及开发板厂商/企业**
+## **一、国内RISC-V芯片及开发板厂商/企业补充整理**
 
 ### （1）CPU核心研发生产厂商
 
@@ -11,6 +9,7 @@
 | 阿里巴巴   | 平头哥玄铁系列RISC-V处理器IP，面向AIoT、高性能计算等        | https://www.alibabagroup.com/ | https://occ.t-head.cn/community | 玄铁C906/C910/C930等，生态成熟                  |
 | 睿思芯科   | 高端RISC-V处理器IP与SoC方案，创始团队源自伯克利RISC-V原创组 | https://www.terapines.com/    | https://www.terapines.com/      | 高性能RISC-V服务器CPU，面向边缘计算与数据中心   |
 | 中科昊芯   | 基于RISC-V的数字信号处理器（DSP）                           | https://www.haocore.com/      | https://www.haocore.com/        | HX2000系列，面向工业控制、新能源、汽车电子等    |
+| 奕斯伟     | 芯片与方案、硅材料、生态链开发等板块                        | https://www.eswin.com/        | https://www.eswin.com/          | RISC-V生态链开发、车载与工业芯片                |
 
 ---
 
@@ -55,41 +54,130 @@
 
 ---
 
-## **二、国际主要RISC-V芯片及开发板厂商/企业**
+## **二、国际主要RISC-V芯片及开发板厂商/企业补充整理**
 
-| 厂商        | 简介                                       | 官网                       | 备注/典型产品                         |
-| ----------- | ------------------------------------------ | -------------------------- | ------------------------------------- |
-| SiFive      | RISC-V商业化先驱，推出U74、E系列等IP       | https://www.sifive.com/    | HiFive开发板、U74多核IP、面向边缘计算 |
-| Microchip   | FPGA与MCU厂商，支持RISC-V内核              | https://www.microchip.com/ | PolarFire SoC、FPGA开发板             |
-| AndesTech   | 台湾RISC-V IP厂商，推出AE350等高性能处理器 | https://www.andestech.com/ | AndesCore系列，面向AIoT、车载         |
-| Tenstorrent | AI芯片厂商，推出高性能RISC-V CPU           | https://tenstorrent.com/   | Ascalon RISC-V CPU，AI训练推理        |
-| NVIDIA      | GPU厂商，部分GPU控制内核采用RISC-V         | https://www.nvidia.com/    | CUDA向RISC-V移植中                    |
-| Qualcomm    | 移动芯片龙头，布局RISC-V MCU与IoT芯片      | https://www.qualcomm.com/  | QCC74xM RISC-V模块                    |
-| Intel       | 推出10亿美元RISC-V生态基金                 | https://www.intel.com/     | 生态投资、FPGA加速                    |
-| Mobileye    | 自动驾驶芯片厂商，加入RISC-V国际基金会     | https://www.mobileye.com/  | 车规RISC-V芯片布局                    |
-
----
-
-## **三、建议与下一步调研方向**
-
-1. **SDK与开发环境调研**
-   - 建议补充各厂商的SDK文档、编译器支持、RTOS适配情况（如FreeRTOS、RT-Thread、OpenHarmony等）。
-   - 部分厂商如沁恒、乐鑫、芯来、SiFive等已有完善开源工具链，可作为重点。
-2. **典型产品与型号对比**
-   - 可针对各厂商的典型RISC-V芯片型号进行对比（如主频、功耗、外设、扩展指令集、典型应用场景）。
-3. **国际生态动态**
-   - 国际厂商如SiFive、Tenstorrent、NVIDIA、高通等在RISC-V高性能与AI方向布局积极，适合高端芯片选型参考。
-4. **开源社区与生态联盟**
-   - 推荐关注RISC-V国际基金会、中国RISC-V产业联盟、RIOS Lab等生态组织，便于获取最新生态信息。
+| 厂商        | 简介                                       | 官网                       | 备注/典型产品                              |
+| ----------- | ------------------------------------------ | -------------------------- | ------------------------------------------ |
+| SiFive      | RISC-V商业化先驱，推出U74、E系列等IP       | https://www.sifive.com/    | HiFive开发板、U74多核IP、面向边缘计算      |
+| Microchip   | FPGA与MCU厂商，支持RISC-V内核              | https://www.microchip.com/ | PolarFire SoC、FPGA开发板                  |
+| AndesTech   | 台湾RISC-V IP厂商，推出AE350等高性能处理器 | https://www.andestech.com/ | AndesCore系列，面向AIoT、车载              |
+| Tenstorrent | AI芯片厂商，推出高性能RISC-V CPU           | https://tenstorrent.com/   | Ascalon RISC-V CPU，AI训练推理             |
+| NVIDIA      | GPU厂商，部分GPU控制内核采用RISC-V         | https://www.nvidia.com/    | CUDA向RISC-V移植中，已量产超30亿颗RISC-V核 |
+| Qualcomm    | 移动芯片龙头，布局RISC-V MCU与IoT芯片      | https://www.qualcomm.com/  | QCC74xM RISC-V模块                         |
+| Intel       | 推出10亿美元RISC-V生态基金                 | https://www.intel.com/     | 生态投资、FPGA加速                         |
+| Mobileye    | 自动驾驶芯片厂商，加入RISC-V国际基金会     | https://www.mobileye.com/  | 车规RISC-V芯片布局                         |
 
 ---
 
-如果你需要，我可以帮你：
+## **三、国际RISC-V生态联盟与组织**
 
-- 继续补充更多厂商信息（如初创公司、高校项目等）；
-- 整理成Excel表格，包含官网、社区、SDK、售卖渠道等；
-- 针对某一类厂商或应用场景做进一步梳理（如“车规RISC-V厂商”、“RISC-V开发板型号大全”等）。
-  是否需要我继续深入某一方向，或直接生成补充完整版Excel？
+| 组织/联盟            | 简介                                   | 官网                          | 备注/特点                                |
+| -------------------- | -------------------------------------- | ----------------------------- | ---------------------------------------- |
+| RISC-V International | 全球RISC-V标准制定与生态推广核心组织   | https://riscv.org/            | 高级会员包括SiFive、阿里、华为等         |
+| RIOS Lab             | 国际RISC-V开源实验室，推动生态建设     | https://www.rioslab.org/      | 开源IP、大学合作、开源社区               |
+| 中国开放指令生态联盟 | 国内RISC-V生态核心联盟，推动产学研结合 | https://www.crvaic.org/       | 成员超180家，包括阿里、华为、中科院等    |
+| RDI聚力联盟          | 聚焦RISC-V数字基础设施生态创新         | https://www.rdi-alliance.org/ | 联合成都、上海等地创新中心，推动产业落地 |
+| 中国RISC-V产业联盟   | 产业链上下游协同创新组织               | https://www.crvic.org/        | 涵盖芯片设计、软件工具、整机应用等       |
+
+---
+
+## **四、国际知名RISC-V初创公司补充**
+
+| 公司          | 简介                               | 官网                                     | 备注/特点                              |
+| ------------- | ---------------------------------- | ---------------------------------------- | -------------------------------------- |
+| Codasip       | RISC-V处理器IP与定制化工具链提供商 | https://www.codasip.com/                 | 支持专用指令集扩展，面向AI、通信等领域 |
+| Ventana Micro | 高性能RISC-V服务器芯片研发商       | https://www.ventanamicro.com/            | 面向云计算与数据中心，强调能效比       |
+| Esperanto     | 高能效RISC-V多核AI芯片公司         | https://www.esperantotech.com/           | 面向边缘AI与语音处理                   |
+| Veedra        | RISC-V安全处理器与IP供应商         | https://www.veedra.com/                  | 面向物联网与车规级安全应用             |
+| GreenWaves    | 超低功耗RISC-V AI芯片厂商          | https://www.greenwaves-technologies.com/ | GAP系列，面向音频与传感器融合处理      |
+
+---
+
+## **五、开源项目与社区资源（精选）**
+
+| 项目/社区         | 简介                                  | 资源地址                                     | 备注/特点                      |
+| ----------------- | ------------------------------------- | -------------------------------------------- | ------------------------------ |
+| 香山（Xiangshan） | 中科院计算所开源高性能RISC-V处理器核  | https://github.com/OpenXiangShan/XiangShan   | 支持多核，面向高性能计算       |
+| RISC-V Mini       | 极简RISC-V处理器实现，教学与入门利器  | https://github.com/ucb-bar/riscv-mini        | 200行Verilog代码，适合学习     |
+| Ventus GPGPU      | 清华大学开源GPGPU项目，基于RISC-V扩展 | https://github.com/THU-LAM-Ventus/Ventus     | 包含ISA、编译器、验证工具链    |
+| Rocket Chip       | Chisel构建的RISC-V SoC生成器          | https://github.com/chipsalliance/rocket-chip | 支持灵活定制，教学与科研常用   |
+| OpenHW Group      | 开源RISC-V IP核与验证平台             | https://www.openhwgroup.org/                 | CORE-V系列，面向商用与工业应用 |
+
+---
+
+## **六、RISE RISC-V软件生态计划（专项补充）**
+
+RISE（RISC-V Software Ecosystem）是由Linux基金会欧洲托管、RISC-V International支持的全球性软件生态加速计划，旨在推动RISC-V在移动、消费电子、数据中心、汽车等领域的软件成熟与商业化。
+
+### RISE创始董事会成员（2023年启动）
+
+| 公司               | 简介/角色                                      | 官网                          | 备注/特点                    |
+| ------------------ | ---------------------------------------------- | ----------------------------- | ---------------------------- |
+| 谷歌（Google）     | 推动Android对RISC-V的官方支持                  | https://www.google.com/       | AOSP已纳入RISC-V适配         |
+| 英特尔（Intel）    | 推动RISC-V软件工具链和开源生态建设             | https://www.intel.com/        | 投资10亿美元RISC-V生态基金   |
+| 平头哥（阿里）     | 中国大陆唯一董事会成员，推动玄铁系列RISC-V生态 | https://www.t-head.cn/        | 玄铁C906/C910/C930，全栈适配 |
+| 三星（Samsung）    | 推动RISC-V在移动与消费电子领域的应用           | https://www.samsung.com/      | 多款芯片采用RISC-V架构       |
+| 联发科（MediaTek） | 推动RISC-V在通信与IoT芯片的应用                | https://www.mediatek.com/     | 天玑系列探索RISC-V           |
+| 英伟达（NVIDIA）   | GPU控制内核全面转向RISC-V，已量产30亿颗        | https://www.nvidia.com/       | NV-RISCV32/64/Vector系列     |
+| 高通（Qualcomm）   | 布局RISC-V在移动与物联网芯片                   | https://www.qualcomm.com/     | QCC74xM RISC-V模块           |
+| Andes Technology   | 高性能RISC-V IP厂商                            | https://www.andestech.com/    | AE350系列                    |
+| Imagination        | GPU与AI加速器厂商，推动RISC-V生态              | https://www.imgtec.com/       | 支持RISC-V扩展               |
+| Red Hat            | 推动Linux发行版对RISC-V的适配                  | https://www.redhat.com/       | Fedora、RHEL等支持RISC-V     |
+| Rivos              | 高性能RISC-V服务器芯片与系统厂商               | https://www.rivosinc.com/     | 面向数据中心与AI             |
+| SiFive             | RISC-V商业化先驱，提供IP核与开发板             | https://www.sifive.com/       | HiFive、U74多核IP            |
+| Ventana Micro      | 高性能RISC-V服务器芯片研发商                   | https://www.ventanamicro.com/ | Veyron V2 192核服务器CPU     |
+
+---
+
+## **七、高校与科研机构相关项目（部分）**
+
+| 机构/项目    | 简介                                                   | 官网/资源                    | 备注/特点                                     |
+| ------------ | ------------------------------------------------------ | ---------------------------- | --------------------------------------------- |
+| 中科院计算所 | 开源高性能RISC-V处理器“香山”项目，推动学术与产业结合 | https://www.ict.ac.cn/       | “雁栖湖”“南湖”版本，分别基于28nm/14nm工艺 |
+| 清华大学     | 开源GPGPU“乘影(Ventus)”项目，支持RISC-V Vector扩展   | https://www.tsinghua.edu.cn/ | 涵盖ISA、硬件架构、编译器、仿真器、验证工具等 |
+| UC Berkeley  | RISC-V原创项目组，持续推动开源架构标准化               | https://www.berkeley.edu/    | 发起RISC-V ISA，开源“RISC-V Mini”教学处理器 |
+| 电子科技大学 | RISC-V芯片设计、工具链开发，参与多项RISC-V生态建设     | https://www.uestc.edu.cn/    | 产学研合作，推动RISC-V教育与科研              |
+| 上海交通大学 | 开展RISC-V架构研究，支持开源EDA工具链开发              | https://www.sjtu.edu.cn/     | 与企业合作，推动RISC-V在工业与AI场景应用      |
+
+---
+
+## **八、生态合作伙伴（代表性企业）**
+
+| 企业   | 简介                                             | 官网                     | 备注/特点                        |
+| ------ | ------------------------------------------------ | ------------------------ | -------------------------------- |
+| 华为   | 鸿蒙系统深度适配RISC-V，参与RISC-V国际基金会     | https://www.huawei.com/  | 面向消费电子与工业控制           |
+| 中兴   | 积极参与RISC-V生态建设，布局RISC-V芯片与通信设备 | https://www.zte.com.cn/  | 推动RISC-V在5G、物联网等领域应用 |
+| 比亚迪 | 车规级RISC-V芯片应用，联合平头哥等推进智能座舱   | https://www.byd.com/     | 推动RISC-V在汽车电子领域落地     |
+| 腾讯   | 云计算与AI领域探索RISC-V应用                     | https://www.tencent.com/ | 支持RISC-V在云服务器与AI推理场景 |
+
+---
+
+## **九、补充国际RISC-V生态组织与计划**
+
+| 组织/计划       | 简介                                            | 官网                              | 备注/特点                            |
+| --------------- | ----------------------------------------------- | --------------------------------- | ------------------------------------ |
+| DARE（欧洲）    | EuroHPC联合体启动，开发多款数据中心级RISC-V芯片 | https://www.eurohpc-ju.europa.eu/ | 包括通用处理器、矢量加速器、AI处理器 |
+| Quintauris      | 高通、博世、英飞凌、恩智浦、北欧半导体合资成立  | https://www.quintauris.com/       | 加速RISC-V在全球汽车与IoT领域商业化  |
+| RISC-V 专利联盟 | 中国9大芯片巨头联合成立，推动专利互不诉讼生态   | https://www.crvaic.org/           | 包括芯原、平头哥、赛昉科技等         |
+
+---
+
+## **十、总结与建议**
+
+1. **生态完整性高**：当前RISC-V生态已覆盖IP核、芯片、开发板、软件工具链、行业联盟、高校与开源项目，全链条完善。
+2. **国际与国内协同**：RISE、Quintauris、DARE等国际计划与国内联盟形成协同，加速RISC-V在移动、汽车、数据中心等场景落地。
+3. **开放与标准并重**：RISE计划由Linux基金会托管，专注软件生态，与RISC-V International的硬件标准形成互补。
+4. **中国力量突出**：国内企业如平头哥（RISE唯一大陆董事会成员）、华为、中科院等在全球生态中发挥重要作用。
+5. **应用场景拓展**：RISC-V正从嵌入式向高性能计算、AI、汽车电子、数据中心等领域快速扩展。
+
+---
+
+### **下一步建议**
+
+- **调研重点方向**：可优先关注RISE成员（如平头哥、谷歌、英伟达）的软件适配进展，以及Quintauris、DARE等国际项目在汽车与数据中心领域的商业化进展。
+- **功能定义参考**：结合香山、Ventus等开源项目，参考高性能与边缘AI场景的指令集扩展和硬件架构设计。
+- **生态合作建议**：可对接RISC-V International、RISE、中国RISC-V产业联盟等，获取标准与生态资源。
+  如需针对某类厂商、场景或项目进一步深度调研，欢迎继续补充说明，我将为你梳理更详细资料！
 
 ---
 
