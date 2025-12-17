@@ -13,3 +13,4 @@
 | 11   | Sipeed Lichee Console 4A | TH1520  | C910  |  采购过，但是系统适配还在进行中 |
 | 12   | VisionFive2 Lite | JH7110S |  | 新上市，未采购: https://item.taobao.com/item.htm?id=1003144788507 |
 | 13   | DC-ROMA RISC-V AI PC | P550 | | https://item.taobao.com/item.htm?id=899823786909&spm=a21xtw.29178619.0.0|
+| 14   |T-Display-P4 |  ESP32-P4 | | https://ruyisdk.cn/t/topic/2238 |
