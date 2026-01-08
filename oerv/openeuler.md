@@ -15,7 +15,7 @@ https://atomgit.com/src-openeuler/opensbi
 
 ## RISC-V SIG 资源
 - obs：https://build.tarsier-infra.isrc.ac.cn/project
-- repo：https://repo.tarsier-infra.isrc.ac.cn/openEuler-RISC-V/testing/20250629/v0.1/
+- repo：https://repo.tarsier-infra.isrc.ac.cn/openEuler-RISC-V/testing/
 - 网站：https://images.oerv.ac.cn/home
 
 
