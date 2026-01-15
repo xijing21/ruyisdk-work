@@ -1,7 +1,7 @@
 | 序号 | 开发板 | 处理器 | IP核（主CPU） | 设备状态 |
 |------|--------|--------|--------------|-------|
-| 1    | 香山笔记本（Xiangshan Kunminghu） | Xiangshan Kunminghu | Xiangshan Kunminghu |  26年底流片？|
-| 2    | 	Milk-V Megrez | EIC7700X   | P550 |  采购过2已用，无富余，需在购买 |
+| 1    | 香山笔记本（Xiangshan Kunminghu） | Xiangshan Kunminghu | Xiangshan Kunminghu |  计划中，26年底流片？|
+| 2    | 	Milk-V Megrez | EIC7700X   | P550 |  采购过2已用，无富余，需再购买 |
 | 3    | BeagleV®-Fire |  |  |  采购过，北京无 |
 | 4    | Sipeed Tang Mega 138K |  | Anlogic EG4S138BG256 | 采购过 |
 | 5    | Nuclei RV-STAR |  |  | 采购过 |
