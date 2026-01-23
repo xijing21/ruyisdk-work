@@ -9,12 +9,12 @@
 
 ## 依赖分析
 ### ruyi & openEuler 24.03 LTS-SP3
-https://github.com/ruyisdk/ruyi/blob/main/pyproject.toml
-<img width="520" height="670" alt="image" src="https://github.com/user-attachments/assets/6675c551-7d26-47da-96b6-c0a746124a08" />
-
-<img width="1528" height="790" alt="image" src="https://github.com/user-attachments/assets/1d0c220d-c04a-46fd-b289-a14770432e1b" />
-
-依赖配置分析结论：openEuler 需要引入 pygit2 =1.6 包；
+* ruyi 依赖说明：
+   * https://github.com/ruyisdk/ruyi/blob/main/pyproject.toml
+   * <img width="520" height="670" alt="image" src="https://github.com/user-attachments/assets/6675c551-7d26-47da-96b6-c0a746124a08" />
+* ruyi 依赖包在openEuler 24.03 LTS-SP3中情况
+   * <img width="1528" height="790" alt="image" src="https://github.com/user-attachments/assets/1d0c220d-c04a-46fd-b289-a14770432e1b" />
+   * 依赖配置分析结论：openEuler 需要引入 pygit2 =1.6 包；
 
 ## 现状
 1. 软件包进入oerv： https://gitee.com/yyjeqhc/ruyi   这个暂时在个人仓库，还未进入src-openeuler
@@ -56,14 +56,15 @@ EBS构建工程 for ruyi：
         > build:	LIBSSH2_VERSION=1.9.0 LIBGIT2_VERSION=1.1.0 sh build.sh
      
 
-todo：
-1. 目前引入的 python-pygit2 版本为 1.18.0 ——> 依赖 libgit2 1.9.0 ;但是openEuler中的 libgit2 是 1.7.2 低版本；
-    * 为了不影响openEuler其它包依赖关系，优先考虑调整新引入的  python-pygit2 降低版本到 libgit2 版本是 1.7.2 
+## todo：
+目前引入的 python-pygit2 版本为 1.18.0 ——> 依赖 libgit2 1.9.0 ;但是openEuler中的 libgit2 是 1.7.2 低版本；
+* 为了不影响openEuler其它包依赖关系，优先考虑调整新引入的  python-pygit2 降低版本到 libgit2 版本是 1.7.2 
 
 * [x] ruyi ：python-pygit2 兼容性最好是 (>=1.6, <1.19)；python-pygit2 1.14.1 依赖的 libgit2 版本是1.7.2 （只有这一个版本，上一个和下一个tag的依赖都不是这个版本）
 * [x] 重新创建软件包仓库：https://gitee.com/phoebe-xi/python-pygit2
-* [x] 更新构建工程中的仓库地址并重新构建：https://eulermaker.compass-ci.openeuler.openatom.cn/project/build?osProject=testruyi  
-* [x] 版本对齐：ruyi（升级到 0.45.0 ） 仓库
+* [x] 更新构建工程中的仓库地址并重新构建：https://eulermaker.compass-ci.openeuler.openatom.cn/project/build?osProject=testruyi
+      <img width="1258" height="689" alt="image" src="https://github.com/user-attachments/assets/f3c58da2-f66c-4344-b60d-cb844da70439" />
+* [ ] 版本对齐：ruyi（升级到 0.45.0 ） 仓库
 * [ ] 重新构建高版本ruyi，三架构成功后按照[【贡献软件包】](https://software-pkg.openeuler.openatom.cn/zh)流程推进 python-pygit2 和 ruyi 2个仓库的创建
 * [ ] 两个仓库创建成功后，在EBS 构建工程中增加 这两个包 （epol？还是哪个工程？）
 
