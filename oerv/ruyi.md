@@ -64,7 +64,8 @@ EBS构建工程 for ruyi：
 * [x] 重新创建软件包仓库：https://gitee.com/phoebe-xi/python-pygit2
 * [x] 更新构建工程中的仓库地址并重新构建：https://eulermaker.compass-ci.openeuler.openatom.cn/project/build?osProject=testruyi
       <img width="1258" height="689" alt="image" src="https://github.com/user-attachments/assets/f3c58da2-f66c-4344-b60d-cb844da70439" />
-* [ ] 版本对齐：ruyi（升级到 0.45.0 ） 仓库
+* [x] 版本对齐：ruyi（升级到 0.45.0 ） 仓库：https://gitee.com/phoebe-xi/ruyi
+      重新构建中。。。
 * [ ] 重新构建高版本ruyi，三架构成功后按照[【贡献软件包】](https://software-pkg.openeuler.openatom.cn/zh)流程推进 python-pygit2 和 ruyi 2个仓库的创建
 * [ ] 两个仓库创建成功后，在EBS 构建工程中增加 这两个包 （epol？还是哪个工程？）
 
