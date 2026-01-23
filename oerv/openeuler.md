@@ -18,6 +18,8 @@ https://atomgit.com/src-openeuler/opensbi
 - repo：https://repo.tarsier-infra.isrc.ac.cn/openEuler-RISC-V/testing/
 - 网站：https://images.oerv.ac.cn/home
 
+## LTS版本
+- update发版：原则上是一月一次。但是实际执行可能会综合各种影响因素调整。
 
 ## 附
 1. 软件源码仓库 https://atomgit.com/src-openeuler
