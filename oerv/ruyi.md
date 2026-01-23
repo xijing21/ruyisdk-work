@@ -13,8 +13,8 @@
    * https://github.com/ruyisdk/ruyi/blob/main/pyproject.toml
    * <img width="520" height="670" alt="image" src="https://github.com/user-attachments/assets/6675c551-7d26-47da-96b6-c0a746124a08" />
 * ruyi 依赖包在openEuler 24.03 LTS-SP3中情况
-   * <img width="1528" height="790" alt="image" src="https://github.com/user-attachments/assets/1d0c220d-c04a-46fd-b289-a14770432e1b" />
-   * 依赖配置分析结论：openEuler 需要引入 pygit2 =1.6 包；
+   * <img width="1082" height="414" alt="image" src="https://github.com/user-attachments/assets/e16c4ca3-684d-4164-8f97-5fc50895e497" />
+   * 依赖配置分析结论：openEuler 需要引入 pygit2 =1.14.1 包；
 
 ## 现状
 1. 软件包进入oerv： https://gitee.com/yyjeqhc/ruyi   这个暂时在个人仓库，还未进入src-openeuler
