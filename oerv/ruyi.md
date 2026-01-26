@@ -73,6 +73,8 @@ EBS构建工程 for ruyi：
   * ruyi：https://gitee.com/yyjeqhc/ruyi.git （升为0.45.0）
   * python-pygit2：https://gitee.com/phoebe-xi/python-pygit2.git
   * 构建结果：riscv64 ruyi 失败； 然后另外两个架构疑似资源原因失败；
+  * <img width="3072" height="1824" alt="image" src="https://github.com/user-attachments/assets/4f2ab7f0-0db2-4ef1-a736-a7b1f32e7e75" />
+
 * [ ] 重新构建高版本ruyi，三架构成功后按照[【贡献软件包】](https://software-pkg.openeuler.openatom.cn/zh)流程推进 python-pygit2 和 ruyi 2个仓库的创建
 * [ ] 两个仓库创建成功后，在EBS 构建工程中增加 这两个包 （epol？还是哪个工程？）
 
