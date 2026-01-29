@@ -43,6 +43,10 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 ### 支持程度一览表
 https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2 
 
+* https://gitlab.inuyasha.love/ruyisdk/ruyi-builds
+
+* Gentoo : https://github.com/ruyisdk/ruyisdk-overlay/
+
 * bianbu 2.2/3.0 + ruyi-0.41.0 : https://archive.spacemit.com/bianbu/pool/main/p/python-ruyi/
 
 * revyos + ruyi-0.41.0 : 
