@@ -24,6 +24,8 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 * 未验证
 * 不支持
 * 单独打包(验证技术支持可行性），可单独下载rpm/deb包到系统进行安装
+  > 依赖RuyiSDK团队自己构建出各个发行版上的rpm/deb包，用户下载后安装。适合知道ruyisdk产品的用户。
+  > 过往工作总结：https://gitlab.inuyasha.love/ruyisdk/ruyi-builds
 * 包加入发行版社区官方仓库
 * 包进入官方软件源（或者说包已经进入发行版构建系统软件包列表）
   > 人工维护：针对某个distro版本，单独打包生成rpm/deb,协商拷贝到官方软件源也是一种办法（适用厂商定制OS）
@@ -38,12 +40,8 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 | 发行版官方源/构建系统 | **OR** | Official Repo |
 | 镜像预装软件 | **PI** | Pre-installed |
 
-
-
 ### 支持程度一览表
 https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2 
-
-* https://gitlab.inuyasha.love/ruyisdk/ruyi-builds
 
 * Gentoo : https://github.com/ruyisdk/ruyisdk-overlay/
 
@@ -60,3 +58,12 @@ https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2
 1. 有固定的发版周期/计划的 Linux Distribution （一般这种发行版均通过构建系统生成OS，发版流程规范，介入难）：卡新版本发布时间节点，按照社区流程推进为佳
 2. 定制化程度高（话语权集中）的Linux Distribution （部分主流发行版的RISC-V版本单独构建和维护的，设备厂商维护的）：时间相对自由，依赖自己构建成功后协调对方纳入到镜像源中
 
+
+## RuyiSDK 推广
+合作方式：
+1. 推进 RuyiSDK 核心组件 ruyi 进入 Linux Distribution 的官方软件源；伴随  Linux Distribution 预装进行推广（预装到RISC-V设备上）
+  > 适合走发行版社区的正规路子持续维护和升级
+2. 先联合RISC-V设备厂商合作，将 ruyi 加入到RISC-V设备搭载的系统的镜像源中
+  > 根据系统构建 ruyi 包，再将ruyi包加入到系统镜像源中
+
+主流的RISC-V设备和其搭载的系统情况：
