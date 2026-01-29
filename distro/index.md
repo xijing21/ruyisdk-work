@@ -43,6 +43,13 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 ### 支持程度一览表
 https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2 
 
+* bianbu 2.2/3.0 + ruyi-0.41.0 : https://archive.spacemit.com/bianbu/pool/main/p/python-ruyi/
+
+* revyos + ruyi-0.41.0 : 
+  * https://fast-mirror.isrc.ac.cn/revyos/revyos-addons/pool/main/p/python-ruyi/
+  * https://fast-mirror.isrc.ac.cn/revyos/trixie/revyos-addons/pool/main/p/python-ruyi/
+
+* rockos 20250730 + ruyi-0.41.0 : https://fast-mirror.isrc.ac.cn/rockos/20250730/rockos-addons/pool/main/p/python-ruyi/
 
 ## RuyiSDK 核心组件在 Linux Distribution 中的更新策略
 鉴于 RuyiSDK 核心组件目前一直处于快速迭代（大概一月一更新），版本更新频繁。从可行性和维护成本的角度综合考虑，RuyiSDK 核心组件在 Linux Distribution 中的更新策略大致两个思路：
