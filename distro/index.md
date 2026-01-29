@@ -41,8 +41,9 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 | 镜像预装软件 | **PI** | Pre-installed |
 
 ### 支持程度一览表
-> https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2 
-> https://gitlab.inuyasha.love/ruyisdk/ruyi-builds
+> * https://gitlab.inuyasha.love/ruyisdk/ruyi-builds
+> * https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2 
+
 
 * ArchLinux ： https://aur.archlinux.org/packages/ruyi   weilinfox
 * Gentoo : https://github.com/ruyisdk/ruyisdk-overlay/  xen0n
