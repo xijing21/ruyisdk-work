@@ -43,11 +43,12 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 ### 支持程度一览表
 https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2 
 
-* Gentoo : https://github.com/ruyisdk/ruyisdk-overlay/
-* Fedora ：https://github.com/ruyisdk/ruyisdk/issues/43
+* ArchLinux ： https://aur.archlinux.org/packages/ruyi   weilinfox
+* Gentoo : https://github.com/ruyisdk/ruyisdk-overlay/  xen0n
+* Fedora ：https://github.com/ruyisdk/ruyisdk/issues/43  U2FsdGVkX1
 * openEuler ：https://github.com/ruyisdk/ruyisdk/issues/72
 
-* bianbu 2.2/3.0 + ruyi-0.41.0 : https://archive.spacemit.com/bianbu/pool/main/p/python-ruyi/
+* bianbu 2.2/3.0 + ruyi-0.41.0 : https://archive.spacemit.com/bianbu/pool/main/p/python-ruyi/  
 
 * revyos + ruyi-0.41.0 : 
   * https://fast-mirror.isrc.ac.cn/revyos/revyos-addons/pool/main/p/python-ruyi/
