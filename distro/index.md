@@ -73,4 +73,7 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
   > 根据系统构建 ruyi 包，再将ruyi包加入到系统镜像源中
 
 主流的RISC-V设备和其搭载的系统情况：
+* 参考：https://github.com/ruyisdk/support-matrix
+* 设备出厂默认预装系统情况：
+
 
