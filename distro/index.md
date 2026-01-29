@@ -39,5 +39,13 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 | 镜像预装软件 | **PI** | Pre-installed |
 
 
+
 ### 支持程度一览表
 https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2 
+
+
+## RuyiSDK 核心组件在 Linux Distribution 中的更新策略
+鉴于 RuyiSDK 核心组件目前一直处于快速迭代（大概一月一更新），版本更新频繁。从可行性和维护成本的角度综合考虑，RuyiSDK 核心组件在 Linux Distribution 中的更新策略大致两个思路：
+1. 有固定的发版周期/计划的 Linux Distribution （一般这种发行版均通过构建系统生成OS，发版流程规范，介入难）：卡新版本发布时间节点，按照社区流程推进为佳
+2. 定制化程度高（话语权集中）的Linux Distribution （部分主流发行版的RISC-V版本单独构建和维护的，设备厂商维护的）：时间相对自由，依赖自己构建成功后协调对方纳入到镜像源中
+
