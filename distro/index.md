@@ -25,7 +25,8 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 * 不支持
 * 单独打包(验证技术支持可行性），可单独下载rpm/deb包到系统进行安装
 * 包加入发行版社区官方仓库
-* 包进入发行版构建系统软件包列表（或者说进入官方软件源）
+* 包进入官方软件源（或者说包已经进入发行版构建系统软件包列表）
+  > 人工维护：针对某个distro版本，单独打包生成rpm/deb,协商拷贝到官方软件源也是一种办法（适用厂商定制OS）
 * 包成为镜像预装软件(主流OS一般不容易，厂商/定制OS相对容易协商)
 
 | 状态定义 | 标记 | 含义 |
@@ -34,7 +35,7 @@ RuyiSDK 核心组件在 Linux Distribution中的支持状态定义为如下几�
 | 不支持 | **NA** | Not Available / Not Applicable |
 | 单独打包 | **ST** | Standalone (Package) |
 | 社区官方仓库 | **CR** | Community Repo |
-| 发行版构建系统/官方源 | **OR** | Official Repo |
+| 发行版官方源/构建系统 | **OR** | Official Repo |
 | 镜像预装软件 | **PI** | Pre-installed |
 
 
