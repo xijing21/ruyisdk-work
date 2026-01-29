@@ -62,7 +62,8 @@ https://docs.qq.com/sheet/DUFdWd3NYcFJQandH?tab=BB08J2
 ## RuyiSDK 推广
 合作方式：
 1. 推进 RuyiSDK 核心组件 ruyi 进入 Linux Distribution 的官方软件源；伴随  Linux Distribution 预装进行推广（预装到RISC-V设备上）
-  > 适合走发行版社区的正规路子持续维护和升级
+  > 该方式适合走发行版社区的正规路子持续维护和升级；而且需要关注Linux发行版与RISC-V设备厂商合作计划；
+  
 2. 先联合RISC-V设备厂商合作，将 ruyi 加入到RISC-V设备搭载的系统的镜像源中
   > 根据系统构建 ruyi 包，再将ruyi包加入到系统镜像源中
 
