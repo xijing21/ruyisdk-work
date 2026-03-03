@@ -30,24 +30,20 @@
 
 | 厂商名称 | 2026年上市RISC-V开发板/设备型号 | 预计上市时间 | 芯片型号 | 产品简介/信息来源 |
 | :--- | :--- | :--- | :--- | :--- |
+| **Milk-V (群芯闪耀)** | **Titan** | **已开售** (2026年1月) | UltraRISC **UR-DP1000** (八核) | 高性能mini-ITX主板，支持PCIe Gen4 x16插槽可扩展显卡，最高64GB DDR4 ECC内存，预装Ubuntu，适合桌面级开发与服务器应用。 |
 | **Milk-V** | **Jupiter2 系列** (SBC / NX SoM / Dev Kit) | **已公布**，计划2026年上市 | 进迭时空 (SpacemiT) **K3** | 全球首批基于RVA23合规RISC-V芯片K3的开发板。SBC形态配备**10GbE SFP+**万兆高速接口，性能强劲。 |
-| **飞凌嵌入式 (Forlinx)** | **OK153-S12 Mini 开发板** | **已上市** (2026年1月) | 全志 (Allwinner) **T153** | 基于全志T153工业级处理器，4×Cortex-A7 + 独立RISC-V MCU异构架构，面向工业控制场景。 |
-| **香蕉派社区 (Banana Pi)** | **BPI-CM6** 系统级模块 | **已公布** (2026年1月) | 进迭时空 (SpacemiT) **K1** | 兼容树莓派CM4/CM5底板引脚，内置8GB LPDDR4和16GB eMMC，便于现有树莓派用户迁移至RISC-V平台。 |
+| **Banana Pi (香蕉派社区)** | **BPI-CM6** 系统级模块 | **已公布** (2026年1月) | 进迭时空 (SpacemiT) **K1** | 兼容树莓派CM4/CM5底板引脚，内置8GB LPDDR4和16GB eMMC，便于现有树莓派用户迁移至RISC-V平台。 |
+| **Banana Pi (香蕉派社区)** | **BPI-RV2** | **已公布** (FOSDEM 2026亮相) | Siflower **SF21H8898** | 基于新芯片平台的RISC-V单板计算机，具体规格待进一步披露。 |
+| **Orange Pi (香橙派)** | **Orange Pi RV2** | **已公布** (FOSDEM 2026亮相) | Ky **X1** | 新一代RISC-V开发板，具体规格待进一步披露。 |
+| **Orange Pi (香橙派)** | **Orange Pi R2S** | **已公布** (FOSDEM 2026亮相) | Ky **X1** | 与RV2同期亮相的新品，具体规格待进一步披露。 |
 | **南京沁恒微电子 (WCH)** | **CH32H417系列**及配套评估板 | **已发布** (2026年3月官网展示) | 青稞RISC-V5F+V3F双核 | 超高速USB3.0双核互联型MCU，主频400MHz+150MHz，提供5Gbps超高速USB3.0、百兆以太网PHY等，适于高性能图像传感和数据采集应用。 |
+| **飞凌嵌入式 (Forlinx)** | **OK153-S12 Mini 开发板** | **已上市** (2026年1月) | 全志 (Allwinner) **T153** | 基于全志T153工业级处理器，4×Cortex-A7 + 独立RISC-V MCU异构架构，面向工业控制场景。 |
 | **华创微 (HC Semi)** | **高性能RISC-V处理器**及**AI芯片**相关开发平台 | **芯片已流片** (2026年2月发布)，开发板待公布 | 华创微自研 | 已完成面向边缘计算的高性能处理器和首颗AI芯片的流片测试，后续预计会推出配套的开发板或解决方案。 |
+| **DeepComputing** | **DC-ROMA RISC-V Mainboard III** | **已公布** (预购即将开启) | 进迭时空 (SpacemiT) **K3** | 为Framework Laptop 13设计的RISC-V主板，支持RVA23，8核CPU最高2.5GHz，30 TOPS NPU，可选16/32GB LPDDR5内存。 |
+| **Aitver** | **ESP32-C3 0.42英寸OLED开发板** | **已上市** (2026年3月) | 乐鑫 (Espressif) **ESP32-C3** | 微型RISC-V MCU开发板，集成0.42英寸OLED显示屏（72×40像素），支持Wi-Fi 4和蓝牙5.0，售价约4.99美元。 |
 
-### 💡 关于南京沁恒微电子的合作思考
+补充说明：
+1. **Milk-V Titan**是高性能桌面级RISC-V主板的代表，其PCIe Gen4 x16插槽支持主流显卡扩展，是RISC-V进入桌面应用的重要产品。
+2. **DeepComputing DC-ROMA Mainboard III**延续了其与Framework合作的开源笔记本路线，基于K3芯片的RVA23支持和30 TOPS NPU使其在AI开发方面具有优势。
+3. **Banana Pi BPI-RV2**和**Orange Pi RV2/R2S**是在FOSDEM 2026上亮相的新品，目前公开信息有限，但已确认将采用Siflower和Ky的新款RISC-V芯片。
 
-你提到沁恒“产品体系很成熟，可能目前合作互补方面ruyisdk不明显”，这个判断很准确。根据调研，沁恒确实是**全栈自研**的典型代表：
-
-1. **自研处理器IP**：青稞RISC-V内核全系自研，从V2到V5F/V3V多版本布局
-2. **自研IDE**：MounRiver Studio（MRS）已迭代多年，MRS2基于VSCode深度定制，覆盖Windows/Linux/macOS
-3. **自研调试工具**：WCH-Link调试器，支持2线调试等特色技术
-4. **完善的教育生态**：大学计划、教材出版、RISC-V竞赛等
-
-**可能的合作切入点**：
-- **Linux开发板方向**：沁恒目前产品以MCU类为主，若未来推出更强性能的Linux应用处理器，RuyiSDK在工具链、发行版支持方面的积累可形成互补
-- **特定行业解决方案**：在电机控制、USB应用、工业互联等领域，联合推出“RuyiSDK + WCH芯片”的参考设计
-- **开发者流量互换**：沁恒拥有大量嵌入式开发者用户，RuyiSDK的包管理器和多平台支持可为其开发者提供更多便利
-
-如果你需要针对沁恒起草一份**定制化的合作洽谈方案**，或者想进一步探讨如何挖掘双方互补点，我可以帮你梳理思路。
