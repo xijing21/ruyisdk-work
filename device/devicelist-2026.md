@@ -16,3 +16,6 @@
 | 14   | VisionFive2 Lite | JH7110S |  | 新上市，未采购: https://item.taobao.com/item.htm?id=1003144788507 |
 | 15   | DC-ROMA RISC-V AI PC | P550 | | https://item.taobao.com/item.htm?id=899823786909&spm=a21xtw.29178619.0.0|
 | 16   |T-Display-P4 |  ESP32-P4 | | https://ruyisdk.cn/t/topic/2238 |
+
+
+已有调整，详见：https://docs.qq.com/sheet/DUFhHemxTQmNwSFpR?tab=i4u4lg
