@@ -78,4 +78,3 @@
 ## TODO
 1. 在Discourse后台开启GitHub登录
 2. 开发IDE的嵌入式Webview登录功能
-3. 官网加入注册功能
