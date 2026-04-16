@@ -13,11 +13,11 @@
 
 现提议：**RuyiSDK mentor 在面试的时候，建议通过给实习生布置 PreTask 任务来考察实习生的水平。并将上述的目标 “设置/嵌入” 到 PreTask 中。**
 
+具体组织形式：在mentor负责的仓库，公开创建issue：PreTask-编号（可选）-任务名
 
-### PreTask 任务示例/任务池
-#### J162-PreTask 
-#### J163-PreTask 
-#### J159-PreTask 
+如需要，可准备并完善 [PreTask 任务示例/任务池](https://github.com/xijing21/ruyisdk-work/blob/main/interns/pretask.md)
+
+
 
 
 ## 入职培养过程中的要求
@@ -55,7 +55,7 @@
 
 > 习惯把仓库当成待办+已办事项的记事本，保持记录的习惯。这也将让你受益良多。
 
-#### 可见产出的常见形式
+#### 补充说明：可见产出的常见形式
 - pull request （常使用简称 PR 或者 pr 代替）
 - issue （针对实习生，issue 主要是上报发现的bug，或者需求建议）
 - 文档仓库提交文档（PR形式；包括 docs 和 board-docs ）
