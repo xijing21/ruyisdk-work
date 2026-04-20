@@ -57,6 +57,12 @@
 
 > 习惯把仓库当成待办+已办事项的记事本，保持记录的习惯。这也将让你受益良多。
 
+示例：
+- https://github.com/ruyisdk-test/test-working/tree/main/weilinfox
+- https://github.com/trdthg/plct/tree/main/outcome_byear/2026
+- https://github.com/DuoQilai/PLCT-Works/tree/main/Monthly
+- https://github.com/TinyuengKwan/plct_works/tree/main
+
 #### 补充说明：可见产出的常见形式
 - pull request （常使用简称 PR 或者 pr 代替）
 - issue （针对实习生，issue 主要是上报发现的bug，或者需求建议）
