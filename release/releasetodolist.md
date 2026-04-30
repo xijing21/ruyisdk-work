@@ -33,7 +33,7 @@
   - [ ] ruyisdk-vscode-extension  @U2FsdGVkX1
     - [ ] docs: 一键编译功能
   - [ ] ruyisdk-eclipse-plugins   @liukaijie
-    - [ ] 需要确定
+    - [ ] 待更新
 
 ### 安装包多平台发布
 
