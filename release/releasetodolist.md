@@ -43,6 +43,7 @@
   - [ ] openVSX：https://open-vsx.org/extension/RuyiSDK/ruyisdk-vscode-extension
   - [ ] visualstudio：https://marketplace.visualstudio.com/manage/publishers/RuyiSDK
 - [ ] Eclipse 插件发布到 Eclipse Marketplace
+  - [ ] https://marketplace.eclipse.org/content/ruyisdk#metrics
 
 ## 宣发
   - [ ] 在 ruyisdk.cn 上宣发；
