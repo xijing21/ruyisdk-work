@@ -40,7 +40,7 @@
 - [X] 发布到 mirror.iscas/ruyisdk  @xxxxen0n
 
   - [X] ruyi ： https://fast-mirror.isrc.ac.cn/ruyisdk/ruyi/
-  - [ ] ruyisdk-vscode-extension ：https://fast-mirror.isrc.ac.cn/ruyisdk/ide/plugins/vscode/    （需要更新）
+  - [X] ruyisdk-vscode-extension ：https://fast-mirror.isrc.ac.cn/ruyisdk/ide/plugins/vscode/  
   - [X] ruyisdk-eclipse-plugins ：https://fast-mirror.isrc.ac.cn/ruyisdk/ide/plugins/eclipse/
 - [X] ruyi 发布到 pypi：https://pypi.org/project/ruyi/
 - [X] VSCode 插件发布到 openVSX 和 visualstudio marketplace  @U2FsdGVkX1
