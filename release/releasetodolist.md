@@ -1,4 +1,5 @@
 ## Release Check
+> 发版测试通过后，正式发版检查清单
 
 ### 仓库 release 发版：
 
