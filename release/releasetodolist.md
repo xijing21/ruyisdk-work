@@ -21,7 +21,7 @@
 - [ ] https://github.com/ruyisdk/packages-index/tree/main/news
   - [ ] ruyi    @xxxxen0n
   - [ ] ruyisdk-vscode-extension  @U2FsdGVkX1
-  - [ ] ruyisdk-eclipse-plugins   @liukaijie
+  - [X] ruyisdk-eclipse-plugins   @liukaijie
 
 ### 文档：文档仓库更新文档（新功能/新特性）
 
@@ -47,9 +47,9 @@
 
   - [X] openVSX：https://open-vsx.org/extension/RuyiSDK/ruyisdk-vscode-extension
   - [X] visualstudio：https://marketplace.visualstudio.com/manage/publishers/RuyiSDK
-- [ ] Eclipse 插件发布到 Eclipse Marketplace  @liukaijie
+- [X] Eclipse 插件发布到 Eclipse Marketplace  @liukaijie
 
-  - [ ] https://marketplace.eclipse.org/content/ruyisdk#metrics   （网页端看不出来版本信息）
+  - [X] https://marketplace.eclipse.org/content/ruyisdk#metrics
 
 ## 宣发  @zhangyuxi
 > ruyisdk.cn 和 IM 渠道、wechat-articles是默认一般会有的推送渠道
