@@ -52,8 +52,17 @@
   - [ ] https://marketplace.eclipse.org/content/ruyisdk#metrics   （网页端看不出来版本信息）
 
 ## 宣发  @zhangyuxi
+> ruyisdk.cn 和 IM 渠道、wechat-articles是默认一般会有的推送渠道
 
-- [ ] 在 ruyisdk.cn 上宣发；
+- [ ] 在 ruyisdk.cn 上宣发（参考https://github.com/ruyisdk/packages-index/tree/main/news 对应版本文档）；
 - [ ] IM渠道推送
-- [ ] 在 https://github.com/ruyisdk/wechat-articles 发（随双周进展的发布时间总结发版信息）
-- [ ] 根据S/A/B/C策略，分析内容，决策更多发布的途径和方式
+- [X] 在 https://github.com/ruyisdk/wechat-articles 发（随双周进展的发布时间总结发版信息）：待下次双周报再随双周报时间同步
+- [X] 根据S/A/B/C策略，分析内容，决策更多发布的途径和方式
+  - [ ] sysroot制作和使用可以做个一个小系列教程推出，注意跟进
+  - [ ] vscode 一键编译功能：至少可以在技术论坛上发个技术分享文章
+
+
+---
+## 总结
+- 文档预计会滞后完善
+- 注意文档完成后的推广跟进
