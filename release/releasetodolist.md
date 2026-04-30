@@ -12,7 +12,7 @@ https://github.com/ruyisdk/ruyisdk-eclipse-plugins/releases
 https://github.com/ruyisdk/ruyisdk-vscode-extension/releases
 
 -[] news：
-https://github.com/ruyisdk/packages-index/tree/main/news
+https://github.com/ruyisdk/packages-index/tree/main/news  需要补充
 
 -[] 文档：文档仓库更新文档（新功能/新特性）
 https://github.com/ruyisdk/docs
@@ -25,7 +25,7 @@ https://fast-mirror.isrc.ac.cn/ruyisdk/ruyi/
 https://fast-mirror.isrc.ac.cn/ruyisdk/ide/plugins/eclipse/
 https://fast-mirror.isrc.ac.cn/ruyisdk/ide/plugins/vscode/   需要更新
 
--[] 宣发：
+-[] 宣发：    todo
   -[] 在 ruyisdk.cn 上宣发；
   -[] IM渠道发送
   -[] 在 https://github.com/ruyisdk/wechat-articles 发（随双周进展的发布时间总结发版信息）
