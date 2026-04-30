@@ -18,9 +18,9 @@
 
 ### news
 
-- [ ] https://github.com/ruyisdk/packages-index/tree/main/news
-  - [ ] ruyi    @xxxxen0n
-  - [ ] ruyisdk-vscode-extension  @U2FsdGVkX1
+- [X] https://github.com/ruyisdk/packages-index/tree/main/news
+  - [X] ruyi    @xxxxen0n
+  - [X] ruyisdk-vscode-extension  @U2FsdGVkX1
   - [X] ruyisdk-eclipse-plugins   @liukaijie
 
 ### 文档：文档仓库更新文档（新功能/新特性）
