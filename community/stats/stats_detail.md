@@ -85,20 +85,21 @@
 
 ### 6. RuyiSDK Eclipse 组件下载量
 
-**定义：** RuyiSDK 提供的 Eclipse IDE 定制包及插件的累计下载次数。**本统计不包含 Eclipse Marketplace 市场的下载量。**
+**定义：** RuyiSDK 提供的 Eclipse IDE 定制包及插件的累计下载次数。**本统计不包含用户在 Eclipse 中更新插件的次数。**
 
 **包含内容：**
 - 预集成的 Eclipse IDE for RuyiSDK（含 RISC-V 开发插件）
 - 独立插件（可安装到现有 Eclipse）
 
-**统计渠道：** RuyiSDK 软件源、GitHub Releases。
+**统计渠道：** RuyiSDK 软件源、GitHub Releases、Eclipse Marketplace in Eclipse。
 
-> 📌 Eclipse Marketplace 市场数据未纳入本指标，如需查询请访问 Eclipse Marketplace 官方页面。
+> 📌 Eclipse 各产品存在功能限制，说明如下：
+> - Eclipse Marketplace 仅为一个中心化的索引，其中不包含任何插件程序。用户在 Eclipse 中更新已安装的插件时将绕过该市场，因此不产生统计数据。
+> - Eclipse Marketplace 网站接口可能存在故障，故需要在 Eclipse IDE 内置商店页面中找到 RuyiSDK 插件并手动记录准确的安装次数。
 
 ---
 
 ### 📌 整体说明
-- “不含某市场”表示该市场的下载量未被加总到当前显示的数字中，主要受限数据接口限制，需要前往应用市场页面查看具体数据。
 - 如有疑问或需要原始日志数据，请联系 RuyiSDK 运营团队： contact@ruyisdk.cn
 
 
