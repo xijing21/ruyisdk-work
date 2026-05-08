@@ -6,23 +6,23 @@
 
 ## 1. RuyiSDK 组件包下载量
 
-**定义：** 通过 RuyiSDK 官方软件源（`https://fast-mirror.isrc.ac.cn/ruyisdk/`）分发的所有二进制组件包的累计下载次数。
+**定义：** 通过 RuyiSDK 官方软件源分发的所有二进制组件包（`ruyisdk/dist`目录下）的累计下载次数。
 
 **包含组件：** GNU 编译工具链、LLVM 编译工具链、QEMU 模拟器、调试器、性能分析工具等。
 
-**统计方式：** 软件源服务器日志聚合，每次 `ruyi install` 或系统包管理器（apt/yum）成功拉取包即计数一次。
+**统计方式：** 软件源服务器日志聚合，~~每次 `ruyi install` 或系统包管理器（apt/yum）成功拉取包即计数一次(应该只有软件源日志统计数据？)~~。
 
 > ⚠️ **注意：** 同一组件不同版本、不同架构分别计数；不代表独立用户数。仅统计软件源渠道，不包含 GitHub Releases 等。
 
 ## 2. RuyiSDK 遥测设备数
 
-**定义：** 在用户明确授权“允许上报匿名设备信息”的前提下，Ruyi 包管理器向后端 `ruyi-backend` 上报的唯一设备标识符（UUID）的去重数量。
+**定义：** 在用户明确授权“允许上报匿名设备信息”的前提下，RuyiSDK 包管理器向[后端](https://github.com/ruyisdk/ruyi-backend) `ruyi-backend` 上报的唯一设备标识符（UUID）的去重数量。
 
 **UUID 生命周期：** 每个设备环境（操作系统实例）首次运行 `ruyi` 时生成并持久化。重装操作系统、更换硬盘或刷写整机镜像后，原 UUID 丢失，新环境会生成新 UUID，可能重复计数。
 
 **隐私保护：** 不上报任何个人身份信息、IP 地址、地理位置；仅用于产品推广效果的大致参考。
 
-> 📌 **局限性：** 未授权上报的设备不可知；同一物理设备因重装系统可能产生多个 UUID。
+> 📌 **局限性：** ~~未授权上报的设备不可知(现在是默认会上报？)；~~ 同一物理设备因重装系统可能产生多个 UUID。
 
 ## 3. RuyiSDK 文档下载量
 
@@ -68,10 +68,33 @@
 ---
 
 ## 📌 整体说明
-
-- 所有数据均为近似最大值，各渠道统计口径略有差异（有的点击即计数，有的成功拉取后才计数）。
-- “不含某市场”表示该市场的下载量未被加总到当前显示的数字中，主要受限数据接口限制，需要前往应用市场页面查看具体数据。
+- “不含某市场”表示该市场的下载量未被加总到当前显示的数字中，主要受限数据接口限制，需要前往应用市场页面查看具体数据。链接详见下方附录章节。
 - 如有疑问或需要原始日志数据，请联系 RuyiSDK 运营团队： contact@ruyisdk.cn
+
+## 附录（分发下载地址）
+- [RuyiSDK 官方软件源](https://fast-mirror.isrc.ac.cn/ruyisdk/)
+
+- RuyiSDK 包管理器分发渠道
+  * [PyPI 应用市场](https://pypi.org/project/ruyi/) ：执行 `pip install ruyi` 安装
+  * [GitHub Releases](https://github.com/ruyisdk/ruyi/releases/) ：构建好的不同架构二进制包，兼容多个Linux发行版
+  * [ISCAS 镜像源(RuyiSDK官方软件源)](https://mirror.iscas.ac.cn/ruyisdk/ruyi/) ：构建好的不同架构二进制包，兼容多个Linux发行版
+  * Linux 发行版:
+    * Fedora
+    * RevyOS
+    * Arch Linux
+    * openRuyi
+    * openEuler
+
+* RuyiSDK VSCode Extension 分发渠道
+  * [Open VSX](https://open-vsx.org/extension/RuyiSDK/ruyisdk-vscode-extension) ：VSCodium Extensions 中搜索 `RuyiSDK`关键字查询 安装 RuyiSDK 插件
+  * [Visual Studio Marketplace](https://marketplace.visualstudio.com/manage/publishers/RuyiSDK) ：VS Code Extensions 中搜索 `RuyiSDK`关键字查询 安装 RuyiSDK 插件
+  * [GitHub Releases](https://github.com/ruyisdk/ruyisdk-vscode-extension/releases/) ：手动下载 VSIX 文件安装
+  * [ISCAS 镜像源](https://mirror.iscas.ac.cn/ruyisdk/ide/plugins/vscode/) ：手动下载 VSIX 文件安装
+
+* RuyiSDK Eclipse Plugins 分发渠道
+  * [Eclipse Marketplace](https://marketplace.eclipse.org/content/ruyisdk#metrics) ：Eclipse Marketplace 中搜索 `RuyiSDK`关键字查询 安装 RuyiSDK 插件
+  * [GitHub Releases](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/releases/) ： 手动下载 ZIP 包安装
+  * [ISCAS 镜像源](https://mirror.iscas.ac.cn/ruyisdk/ide/plugins/eclipse/) ： 手动下载 ZIP 包安装
 
 ---
 
