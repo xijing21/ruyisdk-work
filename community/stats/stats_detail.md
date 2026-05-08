@@ -28,6 +28,8 @@
   * [GitHub Releases](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/releases/) ： 手动下载 ZIP 包安装
   * [ISCAS 镜像源](https://mirror.iscas.ac.cn/ruyisdk/ide/plugins/eclipse/) ： 手动下载 ZIP 包安装
 
+---
+
 ## RuyiSDK 统计页面统计数据说明
 
 以下说明对应 RuyiSDK 官网统计面板中的 6 项核心指标。为保障数据口径清晰，分别列出了统计范围、排除渠道及注意事项。
