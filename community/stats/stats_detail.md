@@ -90,6 +90,7 @@
 **包含内容**：  
 - 预集成的 Eclipse IDE for RuyiSDK（含 RISC-V 开发插件）  
 - 独立插件（可安装到现有 Eclipse）  
+
 **包含渠道**：  
 - ISCAS 镜像源（`ruyisdk/ide/` 目录下的完整 IDE 包和插件包）  
 - GitHub Releases  
