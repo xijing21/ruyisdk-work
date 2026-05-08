@@ -72,12 +72,12 @@
 - 如有疑问或需要原始日志数据，请联系 RuyiSDK 运营团队： contact@ruyisdk.cn
 
 ## 附录（分发下载地址）
-- [RuyiSDK 官方软件源](https://fast-mirror.isrc.ac.cn/ruyisdk/)
+- [RuyiSDK 官方软件源](https://fast-mirror.isrc.ac.cn/ruyisdk/)  在RuyiSDK项目语境下,`RuyiSDK 官方软件源`同`ISCAS 镜像源`(RuyiSDK项目由ISCAS发起，托管在ISCAS镜像源);
 
 - RuyiSDK 包管理器分发渠道
   * [PyPI 应用市场](https://pypi.org/project/ruyi/) ：执行 `pip install ruyi` 安装
   * [GitHub Releases](https://github.com/ruyisdk/ruyi/releases/) ：构建好的不同架构二进制包，兼容多个Linux发行版
-  * [ISCAS 镜像源(RuyiSDK官方软件源)](https://mirror.iscas.ac.cn/ruyisdk/ruyi/) ：构建好的不同架构二进制包，兼容多个Linux发行版
+  * [ISCAS 镜像源](https://mirror.iscas.ac.cn/ruyisdk/ruyi/) ：构建好的不同架构二进制包，兼容多个Linux发行版
   * Linux 发行版:
     * Fedora
     * RevyOS
