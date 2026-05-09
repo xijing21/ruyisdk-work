@@ -31,7 +31,6 @@
 | Open VSX | ∅ | ✓ | ∅ | ❌ |
 | Visual Studio Marketplace | ∅ | ✓ | ∅ | ❌ |
 | Eclipse Marketplace | ∅ | ∅ | ✓ | ❌ |
-| Eclipse 更新站点 | ∅ | ∅ | ✓（进展中） | ❌ |
 
 > **符号说明**  
 > - `✓`：该产品在此渠道有分发支持  
@@ -81,16 +80,16 @@
 
 ### 5. RuyiSDK VS Code 插件下载量
 
-**定义**：RuyiSDK VS Code 插件的累计下载次数。**统计页面中的下载量数据不包含 Open VSX 和 Visual Studio Marketplace 两个市场**。  
+**定义**：RuyiSDK VS Code 插件的累计下载次数。 统计页面下载量数据当前仅反映 ISCAS 镜像源和 GitHub Releases 的分发量。
 **包含渠道**：  
 - ISCAS 镜像源（离线 VSIX 文件）  
 - GitHub Releases  
 
-> 📌 如需查看 Open VSX 或 Visual Studio Marketplace 的数据，请访问对应市场页面。当前数字仅反映 ISCAS 镜像源和 GitHub Releases 的分发量。
+> 📌 **统计页面中的下载量数据不包含 Open VSX 和 Visual Studio Marketplace 两个市场**。 如需查看 Open VSX 或 Visual Studio Marketplace 的数据，请访问对应市场页面。
 
 ### 6. RuyiSDK Eclipse 组件下载量
 
-**定义**：RuyiSDK 提供的 Eclipse IDE 定制包及插件的累计下载次数。**统计页面中的下载量数据不包含 Eclipse Marketplace 市场**。  
+**定义**：RuyiSDK 提供的 Eclipse IDE 定制包及插件的累计下载次数。统计页面下载量数据当前仅反映 ISCAS 镜像源和 GitHub Releases 的分发量。
 **包含内容**：  
 - 预集成的 Eclipse IDE for RuyiSDK（含 RISC-V 开发插件）  
 - 独立插件（可安装到现有 Eclipse）  
@@ -99,19 +98,20 @@
 - ISCAS 镜像源（`ruyisdk/ide/` 目录下的完整 IDE 包和插件包）  
 - GitHub Releases  
 
-> 📌 Eclipse Marketplace 数据未纳入本指标，如需查询请访问其官方页面。
+> 📌 **统计页面中的下载量数据不包含 Eclipse Marketplace 市场**。  Eclipse Marketplace 数据未纳入本指标，如需查询请访问其官方页面。
 
 ---
 
 ## RuyiSDK 分发渠道与链接
 
+- [ISCAS 镜像源（RuyiSDK 官方软件源）](https://fast-mirror.isrc.ac.cn/ruyisdk/)：项目主分发点，由 ISCAS 托管。  
+
 ### RuyiSDK 包管理器分发渠道
 
-- [ISCAS 镜像源（RuyiSDK 官方软件源）](https://fast-mirror.isrc.ac.cn/ruyisdk/)：项目主分发点，由 ISCAS 托管。  
 - [PyPI](https://pypi.org/project/ruyi/)：`pip install ruyi` 安装。  
 - [GitHub Releases](https://github.com/ruyisdk/ruyi/releases/)：多架构、多 Linux 发行版兼容的二进制包。  
-- [ISCAS 镜像源（ruyi 目录）](https://mirror.iscas.ac.cn/ruyisdk/ruyi/)：同上，备用路径。  
-- Linux 发行版系统包仓库（进展中）：Fedora、RevyOS、Arch Linux、openRuyi、openEuler 等。
+- [ISCAS 镜像源（ruyi 目录）](https://mirror.iscas.ac.cn/ruyisdk/ruyi/)：多架构、多 Linux 发行版兼容的二进制包。 
+- Linux 发行版系统包仓库（进展中）：在多个主流的 Linux 发行版中推进 ruyi 的入源工作（将ruyi引入系统镜像源，通过类似 `apt/dnf install ruyi` 方式安装）。
 
 ### RuyiSDK VS Code Extension 分发渠道
 
@@ -125,7 +125,6 @@
 - [Eclipse Marketplace](https://marketplace.eclipse.org/content/ruyisdk#metrics)：插件索引中心。  
 - [GitHub Releases](https://github.com/ruyisdk/ruyisdk-eclipse-plugins/releases/)：手动下载 ZIP 包安装。  
 - [ISCAS 镜像源](https://mirror.iscas.ac.cn/ruyisdk/ide/plugins/eclipse/)：手动下载 ZIP 包安装。  
-- Eclipse 更新站点（Update Site，进展中）：通过更新站点 URL 在线安装。
 
 > **关于 Eclipse Marketplace 统计数据的说明**  
 > - Eclipse Marketplace 仅提供插件索引，不托管插件文件。用户在 Eclipse 内更新已安装插件时将绕过市场，因此无法产生准确的下载计数。  
