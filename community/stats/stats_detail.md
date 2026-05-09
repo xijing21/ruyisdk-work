@@ -49,7 +49,9 @@
 ### 1. RuyiSDK 组件包下载量
 
 **定义**：ISCAS 镜像源 `ruyisdk/dist` 目录下所有二进制组件包的累计下载次数。  
+
 **包含组件**：GNU/LLVM 工具链、QEMU 模拟器、调试器、性能分析工具等。  
+
 **统计方式**：基于 ISCAS 镜像源服务器访问日志，统计对 `ruyisdk/dist` 目录下软件包文件的请求。  
 
 > ⚠️ **注意**：同一组件不同版本、不同架构分别计数；不反映独立用户数。**仅统计 ISCAS 镜像源渠道**，不含 GitHub Releases 等其他来源。
@@ -57,8 +59,11 @@
 ### 2. RuyiSDK 遥测设备上报数
 
 **定义**：RuyiSDK 包管理器向后端 `ruyi-backend` 上报的唯一设备标识符（UUID）的去重数量。**默认开启上报**。  
+
 **UUID 生命周期**：每个设备环境（操作系统实例）首次运行 `ruyi` 时生成并持久化。重装系统、更换硬盘或刷写整机镜像后，原 UUID 丢失，新环境生成新 UUID，可能导致重复计数。  
+
 **隐私保护**：不上报个人身份信息、IP 地址、地理位置。  
+
 **上报策略**：默认开启，用户可通过环境变量 `RUYI_TELEMETRY_OPTOUT=1` 禁用。  
 
 > 📌 **局限性**：用户可自愿禁用上报；同一物理设备因重装系统可能产生多个 UUID。
@@ -66,7 +71,9 @@
 ### 3. RuyiSDK 文档下载量
 
 **定义**：ISCAS 镜像源分发的文档资源（PDF、HTML 包、Markdown 打包文件等）的下载次数。  
+
 **文档类型**：峰会演示文稿、RVI 规范文档、用户手册、技术白皮书、最佳实践指南等。  
+
 **统计方式**：ISCAS 镜像源服务器日志，按文件下载请求计数。
 
 ### 4. RuyiSDK 包管理器下载量
@@ -81,6 +88,7 @@
 ### 5. RuyiSDK VS Code 插件下载量
 
 **定义**：RuyiSDK VS Code 插件的累计下载次数。 统计页面下载量数据当前仅反映 ISCAS 镜像源和 GitHub Releases 的分发量。
+
 **包含渠道**：  
 - ISCAS 镜像源（离线 VSIX 文件）  
 - GitHub Releases  
@@ -90,6 +98,7 @@
 ### 6. RuyiSDK Eclipse 组件下载量
 
 **定义**：RuyiSDK 提供的 Eclipse IDE 定制包及插件的累计下载次数。统计页面下载量数据当前仅反映 ISCAS 镜像源和 GitHub Releases 的分发量。
+
 **包含内容**：  
 - 预集成的 Eclipse IDE for RuyiSDK（含 RISC-V 开发插件）  
 - 独立插件（可安装到现有 Eclipse）  
