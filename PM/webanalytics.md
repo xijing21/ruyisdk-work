@@ -1,5 +1,5 @@
 
-### RuyiSDK 开发板应用示例
+# RuyiSDK 开发板应用示例
 - 文档仓库：https://github.com/ruyisdk/board-docs
 - 网站：https://board-docs-frontend.pages.dev/
 > 目前前端采用 Astro 静态站方案，文档数据来自 board-docs 仓库中的 Markdown 文件，构建时自动扫描生成页面；
@@ -27,7 +27,8 @@
 
 > 附加的，ruyisdk官网 ruyisdk.org （仓库：https://github.com/ruyisdk/ruyisdk-website ） 也还没有建立网页的统计观测。可以综合一起考虑下
 
----
+
+
 
 ## 一、要什么指标
 
@@ -48,11 +49,11 @@
 
 ---
 
-
+# 示例网站
 
 基于你的约束条件（**不采IP、不上Cookie弹窗、优先免费SaaS、VSCode不遥测**），推荐采用 **Umami Cloud（免费 Hobby 层）+ Cloudflare Web Analytics（辅助）** 的组合方案。两者均为无 Cookie、不存储原始 IP 的隐私优先设计，且 Umami 支持自定义事件，恰好满足“按开发板型号”和“按来源”的结构化分析需求。
 
----
+
 
 ## 一、要什么指标
 
@@ -63,7 +64,6 @@
 | **来源** | 官网首页、VSCode 插件、直接访问、搜索引擎 | 衡量各渠道贡献，验证 VSCode 集成价值 |
 | **行为（后续迭代）** | “复制命令”“一键烧录”按钮点击次数 | 评估文档转化效率，而不仅是“看了就走” |
 
----
 
 ## 二、用什么工具
 
@@ -88,7 +88,6 @@
 | **Plausible Cloud** | 隐私友好，但 SaaS 无永久免费层（仅 30 天试用），不符合“优先免费 SaaS”。 |
 | **自部署 Matomo** | 功能过重，需配置 Cookieless 模式，运维成本高，违背“优先 SaaS”原则。 |
 
----
 
 ## 三、怎么埋点
 
@@ -175,8 +174,6 @@ panel.webview.html = `
 </button>
 ```
 
----
-
 ## 四、怎么分析（闭环机制）
 
 ### 1. Dashboard 日常看板（Umami 网页端）
@@ -220,7 +217,6 @@ Umami 显示 "lichee-pi-4a" 周 PV 占 35%
 - **方案 A**：自托管 Umami（Docker + PostgreSQL，成本约 $5/月 VPS）。
 - **方案 B**：通过 Umami API 每日同步到本地/免费的 BI 工具（如 Metabase 或 Grafana），做长期趋势库。
 
----
 
 ## 五、分阶段实施路线图
 
@@ -231,8 +227,6 @@ Umami 显示 "lichee-pi-4a" 周 PV 占 35%
 | **Phase 3** | 持续 | 建立每周五数据 Review 机制；根据 Top 开发板调整首页曝光 | 数据驱动运营闭环 |
 | **Phase 4** | 后续迭代 | 加行为埋点（复制命令、一键烧录）；评估文档转化漏斗 | 从“看文档”延伸到“用文档” |
 
----
-
 ## 六、隐私与合规自检清单
 
 - [x] **不采集 IP**：Umami 默认使用日盐哈希，原始 IP 不落地存储。
@@ -241,7 +235,6 @@ Umami 显示 "lichee-pi-4a" 周 PV 占 35%
 - [x] **隐私政策声明**：建议在 RuyiSDK 官网和文档站页脚加一句简短说明：“本站使用匿名统计工具分析访问趋势，不收集个人身份信息。”
 - [x] **VSCode 零遥测**：所有统计发生在 webview 加载的网页侧，插件本体不上报任何数据。
 
----
 
 **总结**：以 **Umami Cloud 免费层** 为核心，配合已有的 **Cloudflare Web Analytics**，通过 URL `ref` 参数区分来源，通过自定义事件绑定开发板型号，即可在**零 Cookie 弹窗、不采 IP、零服务器运维**的前提下，建立起从“访问统计”到“首页曝光决策”的完整数据闭环。
 
@@ -249,9 +242,10 @@ Umami 显示 "lichee-pi-4a" 周 PV 占 35%
 
 ---
 
+# 官方网站
+
 上述方案**完全适合** ruyisdk.org 官网，且由于官网采用 **Docusaurus** 技术栈，埋点实现甚至比 Astro 更简单。
 
----
 
 ## 技术栈适配分析
 
@@ -262,7 +256,6 @@ Umami 显示 "lichee-pi-4a" 周 PV 占 35%
 | **自定义事件** | 在页面模板中手动调用 `window.umami.track()` | 可用 React Hook 封装，或在 `swizzle` 自定义组件中埋点 | 更优雅 |
 | **构建部署** | Cloudflare Pages | 未明确，但 Docusaurus 通常也部署到 Pages/Vercel/Netlify | Cloudflare Analytics 同样可用 |
 
----
 
 ## 官网的埋点实施方案
 
@@ -351,7 +344,6 @@ const observer = new IntersectionObserver((entries) => {
 
 > 注意：此增强埋点会增加 events 消耗，建议在 Umami Hobby 层 10万 events/月 的额度内评估是否启用。
 
----
 
 ## 官网与开发板文档站的统计协同
 
@@ -373,7 +365,6 @@ const observer = new IntersectionObserver((entries) => {
 
 这样即使跨域（ruyisdk.org → board-docs-frontend.pages.dev），也能通过自定义参数实现**会话级别的来源归因**。
 
----
 
 ## 数据看板设计（双站合一视角）
 
@@ -386,7 +377,6 @@ const observer = new IntersectionObserver((entries) => {
 | **热门开发板排行** | Website = board-docs, Events = `board_view`, 按 `board_name` 排序 | 下周首页该放哪几块板？ |
 | **双站总活跃** | 两个 Website 的 UV 去重估算 | RuyiSDK 整体开发者关注度趋势 |
 
----
 
 ## 实施建议
 
@@ -394,6 +384,5 @@ const observer = new IntersectionObserver((entries) => {
 2. **先文档站后官网**：文档站是核心数据源，先跑通后再给官网加埋点，降低一次性改动风险。
 3. **Docusaurus 插件化**：如果埋点需求增多，可以封装一个 `docusaurus-plugin-umami` 插件，将配置收敛到 `docusaurus.config.js` 的 `themeConfig` 中，便于社区复用。
 
----
 
 **结论**：该方案不仅适合，而且因为 Docusaurus 的插件化和 React 组件化特性，埋点实现会更干净、更可维护。建议两个站点统一接入 Umami，建立从"官网曝光 → 文档阅读 → 开发实践"的完整数据链路。
