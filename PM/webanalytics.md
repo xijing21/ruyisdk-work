@@ -25,6 +25,8 @@
 
 按「要什么指标 → 用什么工具 → 怎么埋点 → 怎么分析」给一个可落地方案。
 
+> 附件的，ruyisdk官网 ruyisdk.org （仓库：https://github.com/ruyisdk/ruyisdk-website ） 也还没有建立网页的统计观测。可以综合一起考虑下
+
 ---
 
 ## 一、要什么指标
