@@ -25,7 +25,7 @@
 
 按「要什么指标 → 用什么工具 → 怎么埋点 → 怎么分析」给一个可落地方案。
 
-> 附件的，ruyisdk官网 ruyisdk.org （仓库：https://github.com/ruyisdk/ruyisdk-website ） 也还没有建立网页的统计观测。可以综合一起考虑下
+> 附加的，ruyisdk官网 ruyisdk.org （仓库：https://github.com/ruyisdk/ruyisdk-website ） 也还没有建立网页的统计观测。可以综合一起考虑下
 
 ---
 
@@ -244,3 +244,156 @@ Umami 显示 "lichee-pi-4a" 周 PV 占 35%
 ---
 
 **总结**：以 **Umami Cloud 免费层** 为核心，配合已有的 **Cloudflare Web Analytics**，通过 URL `ref` 参数区分来源，通过自定义事件绑定开发板型号，即可在**零 Cookie 弹窗、不采 IP、零服务器运维**的前提下，建立起从“访问统计”到“首页曝光决策”的完整数据闭环。
+
+
+
+---
+
+上述方案**完全适合** ruyisdk.org 官网，且由于官网采用 **Docusaurus** 技术栈，埋点实现甚至比 Astro 更简单。
+
+---
+
+## 技术栈适配分析
+
+| 维度 | board-docs（Astro） | ruyisdk.org（Docusaurus） | 方案兼容性 |
+|------|---------------------|---------------------------|------------|
+| **框架特性** | 静态生成，需手动注入脚本到 `Layout.astro` | 基于 React，有 `docusaurus.config.js` 全局配置和插件系统 | Docusaurus 更友好 |
+| **脚本注入** | 手动加到 `<head>` | 通过 `scripts` 字段或自定义插件注入 | 更简单 |
+| **自定义事件** | 在页面模板中手动调用 `window.umami.track()` | 可用 React Hook 封装，或在 `swizzle` 自定义组件中埋点 | 更优雅 |
+| **构建部署** | Cloudflare Pages | 未明确，但 Docusaurus 通常也部署到 Pages/Vercel/Netlify | Cloudflare Analytics 同样可用 |
+
+---
+
+## 官网的埋点实施方案
+
+### 1. 基础脚本接入（Docusaurus 全局配置）
+
+在 `docusaurus.config.js` 的 `scripts` 数组中加入 Umami：
+
+```javascript
+// docusaurus.config.js
+module.exports = {
+  scripts: [
+    {
+      src: 'https://cloud.umami.is/script.js',
+      async: true,
+      defer: true,
+      'data-website-id': 'YOUR_WEBSITE_ID',
+      'data-domains': 'ruyisdk.org',
+    },
+  ],
+};
+```
+
+- Docusaurus 会自动将这些脚本注入到每个页面的 `<head>` 中，**无需修改任何组件**。
+
+### 2. 开发板入口点击追踪（首页小区域）
+
+官网首页将开辟区域展示热门开发板，提供"查看所有开发板"跳转。为了衡量该入口的引流效果，在点击事件中埋点：
+
+```jsx
+// 假设首页开发板卡片组件
+function BoardCard({ boardId, boardName }) {
+  const handleClick = () => {
+    if (typeof window !== 'undefined' && window.umami) {
+      window.umami.track('homepage_board_click', {
+        board_name: boardName,
+        board_id: boardId,
+        position: 'homepage_hero_section',  // 标识位置，便于后续 A/B 不同区域
+      });
+    }
+    window.open(`https://board-docs-frontend.pages.dev/boards/${boardId}?ref=ruyi-homepage`);
+  };
+
+  return (
+    <div onClick={handleClick} className="board-card">
+      {/* 卡片内容 */}
+    </div>
+  );
+}
+```
+
+### 3. "查看所有开发板"按钮追踪
+
+```jsx
+function ViewAllBoardsButton() {
+  const handleClick = () => {
+    window.umami?.track('cta_click', {
+      action: 'view_all_boards',
+      source_page: 'homepage',
+    });
+    window.location.href = 'https://board-docs-frontend.pages.dev/?ref=ruyi-homepage';
+  };
+  
+  return <button onClick={handleClick}>查看所有开发板</button>;
+}
+```
+
+### 4. 文档页阅读深度（可选增强）
+
+Docusaurus 的文档页有内置的锚点导航和滚动监听，可以追踪用户阅读到哪个章节：
+
+```javascript
+// 自定义插件或 client module
+// 使用 Intersection Observer 监听 h2/h3 标题进入视口
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && window.umami) {
+      window.umami.track('doc_section_view', {
+        doc_path: location.pathname,
+        section_id: entry.target.id,
+        section_title: entry.target.innerText,
+      });
+    }
+  });
+});
+```
+
+> 注意：此增强埋点会增加 events 消耗，建议在 Umami Hobby 层 10万 events/月 的额度内评估是否启用。
+
+---
+
+## 官网与开发板文档站的统计协同
+
+建议将两个站点纳入**同一个 Umami 账号下的不同 Website**，便于横向对比：
+
+| Website ID | 域名 | 用途 |
+|------------|------|------|
+| `ruyisdk-org` | `ruyisdk.org` | 官网主站：衡量首页曝光效果、社区入口转化 |
+| `board-docs` | `board-docs-frontend.pages.dev` | 开发板文档站：衡量文档深度使用、开发板热度 |
+
+### 跨站流量追踪
+
+用户在官网点击"查看所有开发板"跳转到文档站时，通过 `?ref=ruyi-homepage` 参数，在文档站侧记录为 `source: ruyi-homepage`，形成**完整的用户路径**：
+
+```
+官网首页 → [点击开发板卡片] → 文档站 /boards/xxx → [阅读文档]
+   ↑ Umami: homepage_board_click          ↑ Umami: board_view (source=ruyi-homepage)
+```
+
+这样即使跨域（ruyisdk.org → board-docs-frontend.pages.dev），也能通过自定义参数实现**会话级别的来源归因**。
+
+---
+
+## 数据看板设计（双站合一视角）
+
+在 Umami 后台，建议建立以下常用筛选视图：
+
+| 视图名称 | 筛选条件 | 业务问题 |
+|----------|----------|----------|
+| **官网引流效果** | Website = ruyisdk-org, Events = `homepage_board_click` | 首页哪个位置的开发板卡片点击率最高？ |
+| **文档站来源构成** | Website = board-docs, Events = `board_view`, 按 `source` 分组 | 官网引流 vs VSCode 插件 vs 直接访问，各占多少？ |
+| **热门开发板排行** | Website = board-docs, Events = `board_view`, 按 `board_name` 排序 | 下周首页该放哪几块板？ |
+| **双站总活跃** | 两个 Website 的 UV 去重估算 | RuyiSDK 整体开发者关注度趋势 |
+
+---
+
+## 实施建议
+
+1. **复用同一 Umami 账号**：官网和文档站共用，降低管理成本。
+2. **先文档站后官网**：文档站是核心数据源，先跑通后再给官网加埋点，降低一次性改动风险。
+3. **Docusaurus 插件化**：如果埋点需求增多，可以封装一个 `docusaurus-plugin-umami` 插件，将配置收敛到 `docusaurus.config.js` 的 `themeConfig` 中，便于社区复用。
+
+---
+
+**结论**：该方案不仅适合，而且因为 Docusaurus 的插件化和 React 组件化特性，埋点实现会更干净、更可维护。建议两个站点统一接入 Umami，建立从"官网曝光 → 文档阅读 → 开发实践"的完整数据链路。
