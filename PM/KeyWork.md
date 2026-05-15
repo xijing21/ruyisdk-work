@@ -28,3 +28,14 @@
   - RuyiSDK 开发板应用示例
     - 文档仓库：https://github.com/ruyisdk/board-docs
     - 网站：https://board-docs-frontend.pages.dev/
+
+
+## 将ruyi 引入Linux发行版
+### openEuler
+- ruyi及依赖包已经引入到openEuler社区了，建仓流程完成
+- **了解后续的流程** ： 将ruyi加入mainline构建系统构建工程中
+
+### openRuyi
+- **综合测试卡在qemu版本（需要升级qemu版本）**
+- 给出综合测试报告
+- 使用文档+宣发稿
