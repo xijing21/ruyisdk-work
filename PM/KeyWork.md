@@ -1,4 +1,4 @@
-## RuyiSDK 近期重点工作
+# RuyiSDK 近期重点工作
 
 - 课题指标：新增10款开发板支持（7月底之前）
   - 开发板采购
@@ -19,3 +19,12 @@
 
 ---
 
+## 开发板支持
+> 分为两部分，课题指标对应的开发板支持（对应验收指标）；和为了用户增长目标的开发板支持工作（以促进厂商合作和数据增长为目标）
+
+- 课题指标：新增10款开发板支持（7月底之前）
+  - 验收开发板选型及采购: 调研了30+多款，选择了10+ 多款，目前新增7个新设备走采购，应该能够挑选出10款开发板用于验收了。
+    - 【腾讯文档】R-Boards-Support https://docs.qq.com/sheet/DUFhHemxTQmNwSFpR?tab=i4u4lg 
+  - RuyiSDK 开发板应用示例
+    - 文档仓库：https://github.com/ruyisdk/board-docs
+    - 网站：https://board-docs-frontend.pages.dev/
