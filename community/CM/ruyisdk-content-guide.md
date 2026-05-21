@@ -34,7 +34,7 @@
 
 ### 2.2 工具使用案例
 
-- **存放位置**：`ruyisdk/board-docs/boards/` 按板卡分类
+- **存放位置**：`ruyisdk/board-docs` 按板卡分类
 - **模板**：
 
 ```markdown
