@@ -140,8 +140,6 @@ ruyi package export ...
 3. **内容模板**：
 
 ```markdown
-> 本贴属于【RuyiSDK进阶锦囊】系列
-
 ## 🔥 现象
 （描述错误或异常行为）
 
