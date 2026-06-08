@@ -26,3 +26,8 @@ RuyiSDK 核心参考资料：
 其它同事整理的未合入的文档：
 - https://github.com/ruyisdk-test/test-working/blob/main/weilinfox/Month34/quick_start_draft2.md
 - https://github.com/ruyisdk-test/test-working/blob/main/weilinfox/Month34/quick_start_draft2.md
+
+- 零硬件体验：QEMU模拟运行可部分参考：
+  - 官网：https://ruyisdk.org/docs/Package-Manager/cases/case6
+  - https://ruyisdk.cn/t/topic/2707/1
+  - https://ruyisdk.cn/t/topic/2708/1
