@@ -1,9 +1,9 @@
 - [首页 (index.md)](#)
 
 - [1. 认识 RuyiSDK (intro/)](#) 
-  - [1.1 产品简介 (intro/overview.md)](#) 
-  - [1.2 产品组成 (intro/structure.md)](#)
-  - [1.3 核心优势 (intro/advantages.md)](#) 
+  - [1.1 产品总览 (intro/overview.md)](#) 
+  - [1.2 产品详述 (intro/prioduct.md)](#)
+  - [1.3 核心仓库 (intro/repos.md)](#) 
   - [1.4 支持平台与环境要求 (intro/platforms.md)](#) 
   - [1.5 数据与隐私 (intro/privacy.md)](#) 
 
