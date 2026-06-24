@@ -3,10 +3,10 @@
 - [1. 认识 RuyiSDK (intro/)](#) 
   - [1.1 产品总览 (intro/overview.md)](#) 
   - [1.2 产品详述 (intro/prioduct.md)](#)
-  - [1.3 核心仓库 (intro/repos.md)](#) 
+  - [1.3 生态与社区 (intro/ecosystem.md)](#) 
   - [1.4 支持平台与环境要求 (intro/platforms.md)](#) 
   - [1.5 数据与隐私 (intro/privacy.md)](#) 
-
+  - [1.6 核心仓库 (intro/repos.md)](#) 
 - [2. 快速入门 (start/)](#) 
   - [2.1 零硬件体验：QEMU模拟运行 (start/qemu.md)](#) 
   - [2.2 开发板实战：开发板初体验 (start/hw.md)](#) 
