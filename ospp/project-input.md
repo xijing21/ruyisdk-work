@@ -279,17 +279,18 @@ x86_64 platform. You can try and are not limited to the following solutions:
 ## 项目成果仓库(PR提交地址)/Project Repository(PR Submission Address) *
 > 项目成果仓库地址应为本组织已有项目仓库地址，而非新建空仓。如需填写多个项目仓库，请用逗号隔开。仓库地址应按填写完整，不允许出现 url 之外的其他字符。
 > 正确的填写示例：
-> https://github.com/kubeedge/sedna
-> https://gitee.com/openeuler/hpcrunner
-> https://gitlab.com/alfredchen/linux-prjc
+> - https://github.com/kubeedge/sedna
+> - https://gitee.com/openeuler/hpcrunner
+> - https://gitlab.com/alfredchen/linux-prjc
+> 
 > 错误的填写示例：
-> https://github.com/kubeedge
-> https://gitee.com/openeuler/kernel/tree/openEuler-22.09/
-> https://github.com/kubeedge/community/tree/master/sig-robotics
-> https://github.com/volcano-sh/volcano/issues/2189
-> git@github.com:dragonflyoss/Dragonfly2.git
-> a new rust repo under https://github.com/milvus-io/
-> https://gitee.com/openeuler/kernel.git
+> - https://github.com/kubeedge
+> - https://gitee.com/openeuler/kernel/tree/openEuler-22.09/
+> - https://github.com/kubeedge/community/tree/master/sig-robotics
+> - https://github.com/volcano-sh/volcano/issues/2189
+> - git@github.com:dragonflyoss/Dragonfly2.git
+> - a new rust repo under https://github.com/milvus-io/
+> - https://gitee.com/openeuler/kernel.git
 
 
 - 输入框：请填写项目成果仓库/Project Repository 1
