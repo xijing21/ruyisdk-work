@@ -2,6 +2,8 @@
 
 ###  【RuyiSDK 包管理器】Linux 篇
 
+https://github.com/Mico697/my-ruyisdk-journey/tree/main/docs
+
 |系列|标题|图文教程|视频教程|
 |---|---|---|---|
 |【RuyiSDK 包管理器】Linux 篇 01|什么是RuyiSDK？|[图文教程](https://ruyisdk.cn/t/topic/2761)|[视频教程](https://b23.tv/SWTppjb)|
@@ -15,4 +17,15 @@
 
 
 ### 【RuyiSDK 包管理器】Windows 篇
+
 https://github.com/shenghailing00-stack/ruyisdk-windows-wsl-guide
+
+- 配套视频教程第01期：https://www.bilibili.com/video/BV1Mygf6CEEk/
+- 配套视频教程第02期：https://www.bilibili.com/video/BV1bCgf65ERz/
+- 配套视频教程第03期：https://www.bilibili.com/video/BV1uCgf6LEbu/
+
+
+### Linux 下 RuyiSDK VS Code 扩展上手记录
+
+文档：https://github.com/NX-lite/ruyisdk-vscode-tutorial 
+视频：https://space.bilibili.com/3546876634729099
