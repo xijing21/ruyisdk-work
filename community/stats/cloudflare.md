@@ -73,7 +73,7 @@ Cloudflare Web Analytics **不直接提供 UV**（独立用户数），而是提
 Cloudflare 技术方案在设计上不使用任何客户端状态（如Cookie或localStorage）来收集指标，也从不精确识别个别用户，它通过分析HTTP请求的来源来统计“访问量”和“页面浏览量”，而不是通过Cookie或IP地址去追踪单个用户的行为。
 
 
-> 注意：在“账户分析”中，`Visitors`是直接对标“独立IP”的指标。官方文档也明确指出，因为基于IP统计，Cloudflare统计的访问者数量可能会比其他分析工具（如Google Analytics）要高，因为它不会过滤掉那些不执行JavaScript的请求（如爬虫、自动化脚本）。
+> 注意：在“账户分析”中，`Visits`包含所有流量类型（包括脚本、自动请求、爬虫等），数据更全面。数值通常比Web Analytics数据高，因为它不会过滤掉那些不执行JavaScript的请求（如爬虫、自动化脚本）。
 > 若想了解**真实的用户访问会话规模**，则 Web Analytics 里的 `Visits` 更合适。
 
 
