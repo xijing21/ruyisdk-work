@@ -19,6 +19,9 @@ GNU上游仓库（主要是针对riscv架构的官方上游）
 - 监控频率：一周一次(或者一个月一次）
 - 后续计划与飞书企业群对接，消息自动发送到飞书群中
 
+## 输出要求
+- fork仓库 https://github.com/xijing21/ry-wf-auto  ，在仓库的 upstream-tracker 下贡献相关代码，具体参考 https://github.com/xijing21/ry-wf-auto/blob/main/upstream-tracker/readme.md  （可调整，但是需要遵守任务相关的文件都在upstream-tracker 下）
+
 ---
 
 以下是豆包的思路和方案（仅供参考）：
