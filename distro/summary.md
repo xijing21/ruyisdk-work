@@ -18,7 +18,9 @@
 | Arch Linux | 社区仓库（AUR、archlinuxcn） | 0.50.0 | `yay -S ruyi`，或启用 archlinuxcn 源后 `sudo pacman -S ruyi` |
 | Gentoo Linux | RuyiSDK 提供 overlay（非官方） | 随 ruyisdk-overlay 更新 | 添加 ruyisdk-overlay 后 `sudo emerge --ask dev-util/ruyi` |
 | openEuler | 引入流程中（前置依赖已通过社区软件包仓库完成引入） | — | 暂用 RuyiSDK 安装脚本或预编译二进制 |
+| openEuler RISC-V | 第三方软件源	| 仅 openEuler RISC-V 23.09，包名 python3-ruyi	| 添加社区 RPM 源后 sudo dnf install python3-ruyi |
 | 其他发行版 | 未收录 | — | 使用 RuyiSDK 安装脚本、预编译二进制或 `pipx install ruyi` |
+
 ## 各发行版详细用法（按修订后术语）
 ### Debian
 Debian 13 (trixie) 稳定版用户需先启用 backports，在 `/etc/apt/sources.list` 中添加：
