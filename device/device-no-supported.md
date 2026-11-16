@@ -51,3 +51,4 @@
 4. **优先级建议**：高置信度三件套（V100 整机、C950 服务器产品、BigSky 平台）可在 2027 Q1 完成采购排期；昆明湖 V3 衍生 SoC 建议以"持续跟踪 + 预留支持位"的方式处理；中等置信度的几项每季度复核一次。
 
 
+跟踪与备注：https://docs.qq.com/sheet/DUFhHemxTQmNwSFpR?tab=i4u4lg
