@@ -1,4 +1,4 @@
-# 未支持设备型号
+# 未支持存量设备型号
 
 | id | Board（Brand + Model + 中文别名） | SoC | IP Core | Support Date |
 |---|---|---|---|---|
