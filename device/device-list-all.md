@@ -49,21 +49,19 @@
 | 7 | SOPHGO SG2044 |
 | 8 | Canaan K230 |
 | 9 | Canaan K510 |
-| 10 | SpacemiT K1 |
-| 11 | SpacemiT M1 |
-| 12 | SpacemiT Ky X1 |
-| 13 | StarFive JH7110 |
-| 14 | StarFive JH7110S |
-| 15 | Allwinner D1 |
-| 16 | SiFive FU740-C000 |
-| 17 | ESWIN EIC7700X |
-| 18 | ESWIN EIC7702X |
-| 19 | Zhihe A210 |
-| 20 | SpacemiT K3 |
+| 10 | SpacemiT K1 / M1 / Ky X1 |
+| 11 | StarFive JH7110 / JH7110S |
+| 12 | Allwinner D1 |
+| 13 | SiFive FU740 |
+| 14 | ESWIN EIC7700X / EIC7702X |
+| 15 | Zhihe A210 |
+| 16 | SpacemiT K3 |
 
 > 注：
 > - A210 由 Zhihe（知合计算）推出，故 SOC 写作 "Zhihe A210"。
 > - Milk-V Jupiter 同时兼容 SpacemiT K1 / M1 两款 SoC，此处分别列项；
+> 行业里"一款芯片"的判定标准:
+**同一块硅片（die）+ 同一套外设集成 = 同一款芯片；型号名只是 SKU 标签。** 芯片行业的通行判定粒度是"硅片"（die）层面，而不是"商品名"层面——同一颗 die 通过**降频、屏蔽单元、换封装、换商品名**派生出多个 SKU 是行业通用做法（高通骁龙 860/870/888+、联发科天玑 1000/1000+ 都是同一颗芯片的不同频率档，而天玑 1000L 则是另一颗芯片）。判断标准有三条：① 硅片面积/制程是否相同；② 集成的 CPU/GPU/ISP/外设 IP 是否完全一致；③ 是否仅通过频率/屏蔽/封装做差异化。
 
 
 ## 三、开发板型号清单（Board List，统一为 品牌+型号+中文别名 三段式）
@@ -81,7 +79,7 @@
 | 9 | Canaan CanMV K230 | Canaan K230 | XuanTie C908 | 2025 |
 | 10 | Sipeed Lichee Pi 3A | SpacemiT K1 | SpacemiT X60 | 2025 |
 | 11 | Banana Pi BPI-F3 | SpacemiT K1 | SpacemiT X60 | 2025 |
-| 12 | Milk-V Jupiter | SpacemiT K1 / M1 | SpacemiT X60 | 2025 |
+| 12 | Milk-V Jupiter | SpacemiT M1 | SpacemiT X60 | 2025 |
 | 13 | SpacemiT MUSE Book（MUSE 笔记本） | SpacemiT M1 | SpacemiT X60 | 2025 |
 | 14 | SpacemiT MUSE Box（MUSE 主机） | SpacemiT M1 | SpacemiT X60 | 2025 |
 | 15 | SpacemiT MUSE Pi Pro（MUSE Pi Pro 单板机） | SpacemiT M1 | SpacemiT X60 | 2025 |
