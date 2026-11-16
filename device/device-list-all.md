@@ -100,9 +100,9 @@
 | 28 | Milk-V Megrez | ESWIN EIC7700X | SiFive P550 | 2026 |
 | 29 | Ruyi RISC-V Book（如意笔记本） | T-Head TH1520 | XuanTie C910 | 2026 |
 | 30 | Ruyi RISC-V Book 2（如意二代笔记本） | Zhihe A210 | XuanTie C920 ×4 + XuanTie C908 ×4 | 2026 |
-| 31 | Milk-V Jupiter2 | SpacemiT K3 | SpacemiT X100 + A100 | 2026 |
-| 32 | SpacemiT K3 CoM260 Kit | SpacemiT K3 | SpacemiT X100 + A100 | 2026 |
-| 33 | SpacemiT K3 Pico-ITX | SpacemiT K3 | SpacemiT X100 + A100 | 2026 |
+| 31 | Milk-V Jupiter2 | SpacemiT K3 | SpacemiT X100 + A100 | 2026(纳入2027报告) |
+| 32 | SpacemiT K3 CoM260 Kit | SpacemiT K3 | SpacemiT X100 + A100 | 2026(纳入2027报告) |
+| 33 | SpacemiT K3 Pico-ITX | SpacemiT K3 | SpacemiT X100 + A100 | 2026(纳入2027报告) |
 
 **几点补充说明：**
 - 条目 24（SOPHGO SG2044 EVB）的 IP Core 列可以修改为 "XuanTie C920"，也可以保留现在的XuanTie C920V2 ; IP Core list 中使用的是"XuanTie C920"，未作细分。
@@ -112,6 +112,16 @@
 
 ---
 
+# 未支持设备型号
+
+| id | Board（Brand + Model + 中文别名） | SoC | IP Core | Support Date |
+|---|---|---|---|---|
+| 34 | Milk-V Jupiter2 NX | SpacemiT K3 | SpacemiT X100 + A100 | 2027 |
+| 35 | Banana Pi BPI-SM10（K3-CoM260 开发套件，BPI 自研载板） | SpacemiT K3 | SpacemiT X100 + A100 | 2027 |
+|   | Milk-V Mars CM | StarFive JH7110 |   | 2027 |
+
+
+---
 
 # 面向 2027 年规划的 RISC-V SoC / 开发板预期清单
 综合 2026 年 RISC-V 中国峰会（10 月 19–20 日）、Hot Chips 2026 以及各家官方规格书与媒体披露的信息，符合你两条筛选条件（①2027 年 6 月前明确上市；②2026 年已发布 SoC 但尚无对应消费级开发板）的项目集中在三类：**服务器级 CPU、香山昆明湖 V3 衍生 SoC、车规与 AI 推理芯片**。下面按置信度分档列出，便于你做计划排期。
