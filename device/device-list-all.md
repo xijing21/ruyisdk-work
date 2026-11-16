@@ -42,20 +42,18 @@
 |---|---|
 | 1 | BOSC XiangShan Nanhu SoC |
 | 2 | T-Head TH1520 |
-| 3 | SOPHGO CV1800B |
-| 4 | SOPHGO SG2002 |
-| 5 | SOPHGO SG2000 |
-| 6 | SOPHGO SG2042 |
-| 7 | SOPHGO SG2044 |
-| 8 | Canaan K230 |
-| 9 | Canaan K510 |
-| 10 | SpacemiT K1 / M1 / Ky X1 |
-| 11 | StarFive JH7110 / JH7110S |
-| 12 | Allwinner D1 |
-| 13 | SiFive FU740 |
-| 14 | ESWIN EIC7700X / EIC7702X |
-| 15 | Zhihe A210 |
-| 16 | SpacemiT K3 |
+| 3 | SOPHGO CV1800B / SG2000 / SG2002 |
+| 4 | SOPHGO SG2042 |
+| 5 | SOPHGO SG2044 |
+| 6 | Canaan K230 |
+| 7 | Canaan K510 |
+| 8 | SpacemiT K1 / M1 / Ky X1 |
+| 9 | StarFive JH7110 / JH7110S |
+| 10 | Allwinner D1 |
+| 11 | SiFive FU740 |
+| 12 | ESWIN EIC7700X / EIC7702X |
+| 13 | Zhihe A210 |
+| 14 | SpacemiT K3 |
 
 > 注：
 > - A210 由 Zhihe（知合计算）推出，故 SOC 写作 "Zhihe A210"。
